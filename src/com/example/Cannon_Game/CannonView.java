@@ -8,6 +8,7 @@ import android.graphics.Paint;
 import android.media.AudioManager;
 import android.media.SoundPool;
 import android.util.AttributeSet;
+import android.view.MotionEvent;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 
@@ -166,5 +167,89 @@ public class CannonView extends SurfaceView implements SurfaceHolder.Callback{
             cannonThread = new CannonThread(getHolder());
             cannonThread.start();
         }
+    }
+
+    private void updatePositions(double elapsedTimeMS) {
+        double interval = elapsedTimeMS / 1000.0;
+
+        if (cannonballOnScreen) {
+            cannonball.x += interval * cannonballVelocityX;
+            cannonball.y += interval * cannonballVelocityY;
+
+            if (cannonball.x + cannonballRadius > blockerDistance && cannonball.x - cannonballRadius < blockerDistance &&
+                    cannonball.y + cannonballRadius > blocker.start.y && cannonball.y - cannonballRadius < blocker.end.y) {
+                cannonballVelocityX *= -1;
+                timeLeft -= MISS_PENALTY;
+
+                soundPool.play(soundMap.get(BLOCKER_SOUND_ID), 1, 1, 1, 0, 1f);
+            }
+
+            else if (cannonball.x + cannonballRadius > screenWidth || cannonball.x - cannonballRadius < 0 )
+                cannonballOnScreen = false;
+
+            else if (cannonball.y + cannonballRadius > screenHeight || cannonball.y - cannonballRadius < 0)
+                cannonballOnScreen = false;
+
+            else if (cannonball.x + cannonballRadius > targetDistance && cannonball.x - cannonballRadius < targetDistance &&
+                    cannonball.y + cannonballRadius > target.start.y && cannonball.y -cannonballRadius < target.end.y) {
+
+                int section = (int) ((cannonball.y - target.start.y) / pieceLength);
+
+                if ((section>= 0 && section < TARGET_PIECES) && !hitStates[section]) {
+                    hitStates[section] = true;
+                    cannonballOnScreen = false;
+                    timeLeft += HIT_REWARD;
+
+                    soundPool.play(soundMap.get(TARGET_SOUND_ID), 1, 1, 1, 0, 1f);
+
+                    if (++targetPiecesHit == TARGET_PIECES) {
+                        cannonThread.setRunning(false);
+                        showGameOverDialog(R.string.win);
+                        gameOver = true;
+                    }
+                }
+            }
+        }
+
+        double blockerUpdate = interval * blockerVelocity;
+        blocker.start.y += blockerUpdate;
+        blocker.end.y += blockerUpdate;
+
+        double targetUpdate = interval * targetVelocity;
+        target.start.y += targetUpdate;
+        target.end.y += targetUpdate;
+
+        if (blocker.start.y < 0 || blocker.end.y > screenHeight)
+            blockerVelocity *= -1;
+
+        if (target.start.y < 0 || target.end.y > screenHeight)
+            targetVelocity *= -1;
+
+        timeLeft -= interval;
+
+        if (timeLeft <= 0) {
+            timeLeft =0.0;
+            gameOver = true;
+            cannonThread.setRunning(false);
+            showGameOverDialog(R.string.lose);
+        }
+    }
+
+    public void fireCannonball(MotionEvent event) {
+        if (cannonballOnScreen)
+            return;
+
+        double angle = alignCannon(event);
+
+        cannonball.x = cannonballRadius;
+        cannonball.y = screenHeight / 2;
+
+        cannonballVelocityX = (int) (cannonballSpeed * Math.sin(angle));
+
+        cannonballVelocityY = (int) (-cannonballSpeed * Math.cos(angle));
+        cannonballOnScreen = true;
+        ++shotsFired;
+
+        soundPool.play(soundMap.get(CANNON_SOUND_ID), 1, 1, 1, 0, 1f);
     }
 }
