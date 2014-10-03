@@ -1,7 +1,10 @@
 package com.example.Cannon_Game;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
+import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Point;
 import android.graphics.Paint;
@@ -251,5 +254,155 @@ public class CannonView extends SurfaceView implements SurfaceHolder.Callback{
         ++shotsFired;
 
         soundPool.play(soundMap.get(CANNON_SOUND_ID), 1, 1, 1, 0, 1f);
+    }
+
+    public double alignCannon(MotionEvent event) {
+        Point touchPoint = new Point((int) event.getX(), (int) event.getY());
+
+        double centerMinusY = (screenHeight / 2 - touchPoint.y);
+
+        double angle =0;
+
+        if (centerMinusY != 0)
+            angle = Math.atan((double) touchPoint.x / centerMinusY);
+
+        if (touchPoint.y> screenHeight /2)
+            angle += Math.PI;
+
+        barrelEnd.x = (int) (cannonLength * Math.sin(angle));
+        barrelEnd.y = (int) (-cannonLength * Math.cos(angle) + screenHeight /2);
+
+        return angle;
+    }
+
+    public void drawGameElements(Canvas canvas) {
+        canvas.drawRect(0, 0, canvas.getWidth(), canvas.getHeight(), backgroundPaint);
+
+        canvas.drawText(getResources().getString(R.string.time_remaining_format, timeLeft), 30, 50, textPaint);
+
+        if (cannonballOnScreen)
+            canvas.drawCircle(cannonball.x, cannonball.y, cannonballRadius, cannonballPaint);
+
+        canvas.drawLine(0, screenHeight / 2, barrelEnd.x, barrelEnd.y, cannonballPaint);
+
+        canvas.drawCircle(0, (int) screenHeight /2, (int) cannonBaseRadius, cannonPaint);
+
+        canvas.drawLine(blocker.start.x, blocker.start.y, blocker.end.x, blocker.end.y, blockerPaint);
+
+        Point currentPoint = new Point();
+
+        currentPoint.x = target.start.x;
+        currentPoint.y = target.start.y;
+
+        for (int i =1; i <=TARGET_PIECES; ++i) {
+            if (!hitStates[i -1]) {
+                if (i% 2 == 0)
+                    targetPaint.setColor(Color.YELLOW);
+                else
+                    targetPaint.setColor(Color.BLUE);
+
+                canvas.drawLine(currentPoint.x, currentPoint.y, target.end.x, (int) (currentPoint.y + pieceLength), targetPaint);
+            }
+            currentPoint.y += pieceLength;
+        }
+    }
+
+    private void showGameOverDialog(int messageId) {
+        final AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(getContext());
+        dialogBuilder.setTitle(getResources().getString(messageId));
+        dialogBuilder.setCancelable(false);
+
+        dialogBuilder.setMessage(getResources().getString(R.string.results_format, shotsFired, totalTimeElapsed));
+        dialogBuilder.setPositiveButton(R.string.reset_game, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                dialogIsDisplayed =false;
+                newGame();
+            }
+        });
+
+        activity.runOnUiThread(
+                new Runnable() {
+                    @Override
+                    public void run() {
+                        dialogIsDisplayed = true;
+                        dialogBuilder.show();
+                    }
+                }
+        );
+    }
+
+    public void stopGame() {
+        if (cannonThread != null)
+            cannonThread.setRunning(false);
+    }
+
+    public void releaseResources() {
+        soundPool.release();
+        soundPool = null;
+    }
+
+    @Override
+    public  void surfaceChanged(SurfaceHolder holder, int format, int width, int height) {
+    }
+
+    @Override
+    public void surfaceCreated(SurfaceHolder holder) {
+        cannonThread = new CannonThread(holder);
+        cannonThread.setRunning(true);
+        cannonThread.start();
+    }
+
+    @Override
+    public void surfaceDestroyed(SurfaceHolder holder) {
+        boolean retry = true;
+        cannonThread.setRunning(false);
+
+        while (retry) {
+            try {
+                cannonThread.join();
+                retry = false;
+            } catch (InterruptedException e) {
+            }
+        }
+    }
+
+    private class CannonThread extends Thread {
+        private SurfaceHolder surfaceHolder;
+        private boolean threadIsRunning = true;
+
+        public CannonThread(SurfaceHolder holder) {
+            surfaceHolder = holder;
+            setName("CannonThread");
+        }
+
+        public void setRunning(boolean running) {
+            threadIsRunning = running;
+        }
+
+        @Override
+        public void run() {
+            Canvas canvas =null;
+            long previousFrameTime = System.currentTimeMillis();
+
+            while (threadIsRunning) {
+                try {
+                    canvas = surfaceHolder.lockCanvas(null);
+
+                    synchronized (surfaceHolder) {
+                        long currentTime = System.currentTimeMillis();
+                        double elapsedTimeMS = currentTime - previousFrameTime;
+                        totalTimeElapsed += elapsedTimeMS / 1000.0;
+                        updatePositions(elapsedTimeMS);
+                        drawGameElements(canvas);
+                        previousFrameTime = currentTime;
+                    }
+                }
+                finally {
+                    if (canvas != null)
+                        surfaceHolder.unlockCanvasAndPost(canvas);
+                }
+            }
+        }
     }
 }
