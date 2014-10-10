@@ -1,0 +1,15 @@
+com.example.Cannon_Game.BuildConfig
+com.example.Cannon_Game.CannonView:
+    public static final int TARGET_PIECES
+    public static final int MISS_PENALTY
+    public static final int HIT_REWARD
+    private static final int TARGET_SOUND_ID
+    private static final int CANNON_SOUND_ID
+    private static final int BLOCKER_SOUND_ID
+com.example.Cannon_Game.R
+com.example.Cannon_Game.R$attr
+com.example.Cannon_Game.R$drawable
+com.example.Cannon_Game.R$id
+com.example.Cannon_Game.R$layout
+com.example.Cannon_Game.R$raw
+com.example.Cannon_Game.R$string

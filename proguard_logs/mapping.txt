@@ -1,0 +1,86 @@
+com.example.Cannon_Game.CannonGame -> com.example.Cannon_Game.CannonGame:
+    android.view.GestureDetector gestureDetector -> b
+    com.example.Cannon_Game.CannonView cannonView -> c
+    android.view.GestureDetector$SimpleOnGestureListener gestureListener -> a
+    void onCreate(android.os.Bundle) -> onCreate
+    void onPause() -> onPause
+    void onDestroy() -> onDestroy
+    boolean onTouchEvent(android.view.MotionEvent) -> onTouchEvent
+    com.example.Cannon_Game.CannonView access$000(com.example.Cannon_Game.CannonGame) -> a
+com.example.Cannon_Game.CannonGame$1 -> com.example.Cannon_Game.a:
+    com.example.Cannon_Game.CannonGame this$0 -> a
+    boolean onDoubleTap(android.view.MotionEvent) -> onDoubleTap
+com.example.Cannon_Game.CannonView -> com.example.Cannon_Game.CannonView:
+    com.example.Cannon_Game.CannonView$CannonThread cannonThread -> a
+    android.app.Activity activity -> b
+    boolean dialogIsDisplayed -> c
+    boolean gameOver -> d
+    double timeLeft -> e
+    int shotsFired -> f
+    double totalTimeElapsed -> g
+    com.example.Cannon_Game.Line blocker -> h
+    int blockerDistance -> i
+    int blockerBeginning -> j
+    int blockerEnd -> k
+    int initialBlockerVelocity -> l
+    float blockerVelocity -> m
+    com.example.Cannon_Game.Line target -> n
+    int targetDistance -> o
+    int targetBeginning -> p
+    double pieceLength -> q
+    int targetEnd -> r
+    int initialTargetVelocity -> s
+    float targetVelocity -> t
+    int lineWidth -> u
+    boolean[] hitStates -> v
+    int targetPiecesHit -> w
+    android.graphics.Point cannonball -> x
+    int cannonballVelocityX -> y
+    int cannonballVelocityY -> z
+    boolean cannonballOnScreen -> A
+    int cannonballRadius -> B
+    int cannonballSpeed -> C
+    int cannonBaseRadius -> D
+    int cannonLength -> E
+    android.graphics.Point barrelEnd -> F
+    int screenWidth -> G
+    int screenHeight -> H
+    android.media.SoundPool soundPool -> I
+    java.util.Map soundMap -> J
+    android.graphics.Paint textPaint -> K
+    android.graphics.Paint cannonballPaint -> L
+    android.graphics.Paint cannonPaint -> M
+    android.graphics.Paint blockerPaint -> N
+    android.graphics.Paint targetPaint -> O
+    android.graphics.Paint backgroundPaint -> P
+    void onSizeChanged(int,int,int,int) -> onSizeChanged
+    void newGame() -> a
+    void updatePositions(double) -> a
+    void fireCannonball(android.view.MotionEvent) -> a
+    double alignCannon(android.view.MotionEvent) -> b
+    void drawGameElements(android.graphics.Canvas) -> a
+    void showGameOverDialog(int) -> a
+    void stopGame() -> b
+    void releaseResources() -> c
+    void surfaceChanged(android.view.SurfaceHolder,int,int,int) -> surfaceChanged
+    void surfaceCreated(android.view.SurfaceHolder) -> surfaceCreated
+    void surfaceDestroyed(android.view.SurfaceHolder) -> surfaceDestroyed
+    boolean access$002(com.example.Cannon_Game.CannonView,boolean) -> a
+    double access$118(com.example.Cannon_Game.CannonView,double) -> a
+    void access$200(com.example.Cannon_Game.CannonView,double) -> b
+com.example.Cannon_Game.CannonView$1 -> com.example.Cannon_Game.b:
+    com.example.Cannon_Game.CannonView this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.example.Cannon_Game.CannonView$2 -> com.example.Cannon_Game.c:
+    android.app.AlertDialog$Builder val$dialogBuilder -> a
+    com.example.Cannon_Game.CannonView this$0 -> b
+    void run() -> run
+com.example.Cannon_Game.CannonView$CannonThread -> com.example.Cannon_Game.d:
+    android.view.SurfaceHolder surfaceHolder -> b
+    boolean threadIsRunning -> c
+    com.example.Cannon_Game.CannonView this$0 -> a
+    void setRunning(boolean) -> a
+    void run() -> run
+com.example.Cannon_Game.Line -> com.example.Cannon_Game.e:
+    android.graphics.Point start -> a
+    android.graphics.Point end -> b

@@ -1,0 +1,3171 @@
+_____________________________________________________________________
++ Program class: com/example/Cannon_Game/CannonGame
+  Superclass:    android/app/Activity
+  Major version: 0x33
+  Minor version: 0x0
+  Access flags:  0x21
+    = public class com.example.Cannon_Game.CannonGame extends android.app.Activity
+
+Interfaces (count = 0):
+
+Constant Pool (count = 76):
+  + Integer [2130903040]
+  + Integer [2131099648]
+  + Class [android/app/Activity]
+  + Class [android/view/GestureDetector]
+  + Class [android/view/MotionEvent]
+  + Class [com/example/Cannon_Game/CannonGame]
+  + Class [com/example/Cannon_Game/CannonView]
+  + Class [com/example/Cannon_Game/a]
+  + Fieldref [com/example/Cannon_Game/CannonGame.a Landroid/view/GestureDetector$SimpleOnGestureListener;]
+  + Fieldref [com/example/Cannon_Game/CannonGame.b Landroid/view/GestureDetector;]
+  + Fieldref [com/example/Cannon_Game/CannonGame.c Lcom/example/Cannon_Game/CannonView;]
+  + Methodref [android/app/Activity.<init> ()V]
+  + Methodref [android/app/Activity.onCreate (Landroid/os/Bundle;)V]
+  + Methodref [android/app/Activity.onDestroy ()V]
+  + Methodref [android/app/Activity.onPause ()V]
+  + Methodref [android/view/GestureDetector.<init> (Landroid/content/Context;Landroid/view/GestureDetector$OnGestureListener;)V]
+  + Methodref [android/view/GestureDetector.onTouchEvent (Landroid/view/MotionEvent;)Z]
+  + Methodref [android/view/MotionEvent.getAction ()I]
+  + Methodref [com/example/Cannon_Game/CannonGame.findViewById (I)Landroid/view/View;]
+  + Methodref [com/example/Cannon_Game/CannonGame.setContentView (I)V]
+  + Methodref [com/example/Cannon_Game/CannonGame.setVolumeControlStream (I)V]
+  + Methodref [com/example/Cannon_Game/CannonView.b ()V]
+  + Methodref [com/example/Cannon_Game/CannonView.b (Landroid/view/MotionEvent;)D]
+  + Methodref [com/example/Cannon_Game/CannonView.c ()V]
+  + Methodref [com/example/Cannon_Game/a.<init> (Lcom/example/Cannon_Game/CannonGame;)V]
+  + NameAndType [<init> ()V]
+  + NameAndType [<init> (Landroid/content/Context;Landroid/view/GestureDetector$OnGestureListener;)V]
+  + NameAndType [<init> (Lcom/example/Cannon_Game/CannonGame;)V]
+  + NameAndType [a Landroid/view/GestureDetector$SimpleOnGestureListener;]
+  + NameAndType [b ()V]
+  + NameAndType [b (Landroid/view/MotionEvent;)D]
+  + NameAndType [b Landroid/view/GestureDetector;]
+  + NameAndType [c ()V]
+  + NameAndType [c Lcom/example/Cannon_Game/CannonView;]
+  + NameAndType [findViewById (I)Landroid/view/View;]
+  + NameAndType [getAction ()I]
+  + NameAndType [onCreate (Landroid/os/Bundle;)V]
+  + NameAndType [onDestroy ()V]
+  + NameAndType [onPause ()V]
+  + NameAndType [onTouchEvent (Landroid/view/MotionEvent;)Z]
+  + NameAndType [setContentView (I)V]
+  + NameAndType [setVolumeControlStream (I)V]
+  + Utf8 [()I]
+  + Utf8 [()V]
+  + Utf8 [(I)Landroid/view/View;]
+  + Utf8 [(I)V]
+  + Utf8 [(Landroid/content/Context;Landroid/view/GestureDetector$OnGestureListener;)V]
+  + Utf8 [(Landroid/os/Bundle;)V]
+  + Utf8 [(Landroid/view/MotionEvent;)D]
+  + Utf8 [(Landroid/view/MotionEvent;)Z]
+  + Utf8 [(Lcom/example/Cannon_Game/CannonGame;)Lcom/example/Cannon_Game/CannonView;]
+  + Utf8 [(Lcom/example/Cannon_Game/CannonGame;)V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [Landroid/view/GestureDetector$SimpleOnGestureListener;]
+  + Utf8 [Landroid/view/GestureDetector;]
+  + Utf8 [Lcom/example/Cannon_Game/CannonView;]
+  + Utf8 [StackMapTable]
+  + Utf8 [a]
+  + Utf8 [android/app/Activity]
+  + Utf8 [android/view/GestureDetector]
+  + Utf8 [android/view/MotionEvent]
+  + Utf8 [b]
+  + Utf8 [c]
+  + Utf8 [com/example/Cannon_Game/CannonGame]
+  + Utf8 [com/example/Cannon_Game/CannonView]
+  + Utf8 [com/example/Cannon_Game/a]
+  + Utf8 [findViewById]
+  + Utf8 [getAction]
+  + Utf8 [onCreate]
+  + Utf8 [onDestroy]
+  + Utf8 [onPause]
+  + Utf8 [onTouchEvent]
+  + Utf8 [setContentView]
+  + Utf8 [setVolumeControlStream]
+
+Fields (count = 3):
+  + Field:        b Landroid/view/GestureDetector;
+    Access flags: 0x2
+      = private android.view.GestureDetector b
+  + Field:        c Lcom/example/Cannon_Game/CannonView;
+    Access flags: 0x2
+      = private com.example.Cannon_Game.CannonView c
+  + Field:        a Landroid/view/GestureDetector$SimpleOnGestureListener;
+    Access flags: 0x0
+      = android.view.GestureDetector$SimpleOnGestureListener a
+
+Methods (count = 6):
+  - Method:       <init>()V
+    Access flags: 0x1
+      = public CannonGame()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 17, locals = 1, stack = 4):
+      [0] aload_0 v0
+      [1] invokespecial #12
+        + Methodref [android/app/Activity.<init> ()V]
+      [4] aload_0 v0
+      [5] new #8
+        + Class [com/example/Cannon_Game/a]
+      [8] dup
+      [9] aload_0 v0
+      [10] invokespecial #25
+        + Methodref [com/example/Cannon_Game/a.<init> (Lcom/example/Cannon_Game/CannonGame;)V]
+      [13] putfield #9
+        + Fieldref [com/example/Cannon_Game/CannonGame.a Landroid/view/GestureDetector$SimpleOnGestureListener;]
+      [16] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onCreate(Landroid/os/Bundle;)V
+    Access flags: 0x1
+      = public void onCreate(android.os.Bundle)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 46, locals = 2, stack = 5):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] invokespecial #13
+        + Methodref [android/app/Activity.onCreate (Landroid/os/Bundle;)V]
+      [5] aload_0 v0
+      [6] ldc #1
+        + Integer [2130903040]
+      [8] invokevirtual #20
+        + Methodref [com/example/Cannon_Game/CannonGame.setContentView (I)V]
+      [11] aload_0 v0
+      [12] aload_0 v0
+      [13] ldc #2
+        + Integer [2131099648]
+      [15] invokevirtual #19
+        + Methodref [com/example/Cannon_Game/CannonGame.findViewById (I)Landroid/view/View;]
+      [18] checkcast #7
+        + Class [com/example/Cannon_Game/CannonView]
+      [21] putfield #11
+        + Fieldref [com/example/Cannon_Game/CannonGame.c Lcom/example/Cannon_Game/CannonView;]
+      [24] aload_0 v0
+      [25] new #4
+        + Class [android/view/GestureDetector]
+      [28] dup
+      [29] aload_0 v0
+      [30] aload_0 v0
+      [31] getfield #9
+        + Fieldref [com/example/Cannon_Game/CannonGame.a Landroid/view/GestureDetector$SimpleOnGestureListener;]
+      [34] invokespecial #16
+        + Methodref [android/view/GestureDetector.<init> (Landroid/content/Context;Landroid/view/GestureDetector$OnGestureListener;)V]
+      [37] putfield #10
+        + Fieldref [com/example/Cannon_Game/CannonGame.b Landroid/view/GestureDetector;]
+      [40] aload_0 v0
+      [41] iconst_3
+      [42] invokevirtual #21
+        + Methodref [com/example/Cannon_Game/CannonGame.setVolumeControlStream (I)V]
+      [45] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onPause()V
+    Access flags: 0x1
+      = public void onPause()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 12, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] invokespecial #15
+        + Methodref [android/app/Activity.onPause ()V]
+      [4] aload_0 v0
+      [5] getfield #11
+        + Fieldref [com/example/Cannon_Game/CannonGame.c Lcom/example/Cannon_Game/CannonView;]
+      [8] invokevirtual #22
+        + Methodref [com/example/Cannon_Game/CannonView.b ()V]
+      [11] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onDestroy()V
+    Access flags: 0x4
+      = protected void onDestroy()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 12, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] invokespecial #14
+        + Methodref [android/app/Activity.onDestroy ()V]
+      [4] aload_0 v0
+      [5] getfield #11
+        + Fieldref [com/example/Cannon_Game/CannonGame.c Lcom/example/Cannon_Game/CannonView;]
+      [8] invokevirtual #24
+        + Methodref [com/example/Cannon_Game/CannonView.c ()V]
+      [11] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onTouchEvent(Landroid/view/MotionEvent;)Z
+    Access flags: 0x1
+      = public boolean onTouchEvent(android.view.MotionEvent)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 32, locals = 3, stack = 2):
+      [0] aload_1 v1
+      [1] invokevirtual #18
+        + Methodref [android/view/MotionEvent.getAction ()I]
+      [4] istore_2 v2
+      [5] iload_2 v2
+      [6] ifeq +8 (target=14)
+      [9] iload_2 v2
+      [10] iconst_2
+      [11] ificmpne +12 (target=23)
+      [14] aload_0 v0
+      [15] getfield #11
+        + Fieldref [com/example/Cannon_Game/CannonGame.c Lcom/example/Cannon_Game/CannonView;]
+      [18] aload_1 v1
+      [19] invokevirtual #23
+        + Methodref [com/example/Cannon_Game/CannonView.b (Landroid/view/MotionEvent;)D]
+      [22] pop2
+      [23] aload_0 v0
+      [24] getfield #10
+        + Fieldref [com/example/Cannon_Game/CannonGame.b Landroid/view/GestureDetector;]
+      [27] aload_1 v1
+      [28] invokevirtual #17
+        + Methodref [android/view/GestureDetector.onTouchEvent (Landroid/view/MotionEvent;)Z]
+      [31] ireturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 2):
+        - [14] Var: ...[i], Stack: (empty)
+        - [23] Var: ..., Stack: (empty)
+  + Method:       a(Lcom/example/Cannon_Game/CannonGame;)Lcom/example/Cannon_Game/CannonView;
+    Access flags: 0x1008
+      = static synthetic com.example.Cannon_Game.CannonView a(com.example.Cannon_Game.CannonGame)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] getfield #11
+        + Fieldref [com/example/Cannon_Game/CannonGame.c Lcom/example/Cannon_Game/CannonView;]
+      [4] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/example/Cannon_Game/a
+  Superclass:    android/view/GestureDetector$SimpleOnGestureListener
+  Major version: 0x33
+  Minor version: 0x0
+  Access flags:  0x20
+    = class com.example.Cannon_Game.a extends android.view.GestureDetector$SimpleOnGestureListener
+
+Interfaces (count = 0):
+
+Constant Pool (count = 27):
+  + Class [android/view/GestureDetector$SimpleOnGestureListener]
+  + Class [com/example/Cannon_Game/CannonGame]
+  + Class [com/example/Cannon_Game/CannonView]
+  + Class [com/example/Cannon_Game/a]
+  + Fieldref [com/example/Cannon_Game/a.a Lcom/example/Cannon_Game/CannonGame;]
+  + Methodref [android/view/GestureDetector$SimpleOnGestureListener.<init> ()V]
+  + Methodref [com/example/Cannon_Game/CannonGame.a (Lcom/example/Cannon_Game/CannonGame;)Lcom/example/Cannon_Game/CannonView;]
+  + Methodref [com/example/Cannon_Game/CannonView.a (Landroid/view/MotionEvent;)V]
+  + NameAndType [<init> ()V]
+  + NameAndType [a (Landroid/view/MotionEvent;)V]
+  + NameAndType [a (Lcom/example/Cannon_Game/CannonGame;)Lcom/example/Cannon_Game/CannonView;]
+  + NameAndType [a Lcom/example/Cannon_Game/CannonGame;]
+  + Utf8 [()V]
+  + Utf8 [(Landroid/view/MotionEvent;)V]
+  + Utf8 [(Landroid/view/MotionEvent;)Z]
+  + Utf8 [(Lcom/example/Cannon_Game/CannonGame;)Lcom/example/Cannon_Game/CannonView;]
+  + Utf8 [(Lcom/example/Cannon_Game/CannonGame;)V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [Lcom/example/Cannon_Game/CannonGame;]
+  + Utf8 [a]
+  + Utf8 [android/view/GestureDetector$SimpleOnGestureListener]
+  + Utf8 [com/example/Cannon_Game/CannonGame]
+  + Utf8 [com/example/Cannon_Game/CannonView]
+  + Utf8 [com/example/Cannon_Game/a]
+  + Utf8 [onDoubleTap]
+
+Fields (count = 1):
+  + Field:        a Lcom/example/Cannon_Game/CannonGame;
+    Access flags: 0x1010
+      = final synthetic com.example.Cannon_Game.CannonGame a
+
+Methods (count = 2):
+  - Method:       <init>(Lcom/example/Cannon_Game/CannonGame;)V
+    Access flags: 0x0
+      = a(com.example.Cannon_Game.CannonGame)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 10, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] putfield #5
+        + Fieldref [com/example/Cannon_Game/a.a Lcom/example/Cannon_Game/CannonGame;]
+      [5] aload_0 v0
+      [6] invokespecial #6
+        + Methodref [android/view/GestureDetector$SimpleOnGestureListener.<init> ()V]
+      [9] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onDoubleTap(Landroid/view/MotionEvent;)Z
+    Access flags: 0x1
+      = public boolean onDoubleTap(android.view.MotionEvent)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 13, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] getfield #5
+        + Fieldref [com/example/Cannon_Game/a.a Lcom/example/Cannon_Game/CannonGame;]
+      [4] invokestatic #7
+        + Methodref [com/example/Cannon_Game/CannonGame.a (Lcom/example/Cannon_Game/CannonGame;)Lcom/example/Cannon_Game/CannonView;]
+      [7] aload_1 v1
+      [8] invokevirtual #8
+        + Methodref [com/example/Cannon_Game/CannonView.a (Landroid/view/MotionEvent;)V]
+      [11] iconst_1
+      [12] ireturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/example/Cannon_Game/CannonView
+  Superclass:    android/view/SurfaceView
+  Major version: 0x33
+  Minor version: 0x0
+  Access flags:  0x21
+    = public class com.example.Cannon_Game.CannonView extends android.view.SurfaceView
+
+Interfaces (count = 1):
+  + Class [android/view/SurfaceHolder$Callback]
+
+Constant Pool (count = 402):
+  + Integer [-16776961]
+  + Integer [2130968576]
+  + Integer [2130968577]
+  + Integer [2130968578]
+  + Integer [2131034113]
+  + Integer [2131034114]
+  + Integer [2131034115]
+  + Integer [2131034116]
+  + Integer [2131034117]
+  + Float [-1.0]
+  + Float [1.5]
+  + Float [30.0]
+  + Float [50.0]
+  + Class [android/app/Activity]
+  + Class [android/app/AlertDialog$Builder]
+  + Class [android/content/res/Resources]
+  + Class [android/graphics/Canvas]
+  + Class [android/graphics/Paint]
+  + Class [android/graphics/Point]
+  + Class [android/media/SoundPool]
+  + Class [android/view/MotionEvent]
+  + Class [android/view/SurfaceHolder]
+  + Class [android/view/SurfaceHolder$Callback]
+  + Class [android/view/SurfaceView]
+  + Class [com/example/Cannon_Game/CannonView]
+  + Class [com/example/Cannon_Game/b]
+  + Class [com/example/Cannon_Game/c]
+  + Class [com/example/Cannon_Game/d]
+  + Class [com/example/Cannon_Game/e]
+  + Class [java/lang/Double]
+  + Class [java/lang/Integer]
+  + Class [java/lang/InterruptedException]
+  + Class [java/lang/Math]
+  + Class [java/lang/Object]
+  + Class [java/util/HashMap]
+  + Class [java/util/Map]
+  + Double [2.0]
+  + Double [3.0]
+  + Double [3.141592653589793]
+  + Double [10.0]
+  + Double [1000.0]
+  + Fieldref [android/graphics/Point.x I]
+  + Fieldref [android/graphics/Point.y I]
+  + Fieldref [com/example/Cannon_Game/CannonView.A Z]
+  + Fieldref [com/example/Cannon_Game/CannonView.B I]
+  + Fieldref [com/example/Cannon_Game/CannonView.C I]
+  + Fieldref [com/example/Cannon_Game/CannonView.D I]
+  + Fieldref [com/example/Cannon_Game/CannonView.E I]
+  + Fieldref [com/example/Cannon_Game/CannonView.F Landroid/graphics/Point;]
+  + Fieldref [com/example/Cannon_Game/CannonView.G I]
+  + Fieldref [com/example/Cannon_Game/CannonView.H I]
+  + Fieldref [com/example/Cannon_Game/CannonView.I Landroid/media/SoundPool;]
+  + Fieldref [com/example/Cannon_Game/CannonView.J Ljava/util/Map;]
+  + Fieldref [com/example/Cannon_Game/CannonView.K Landroid/graphics/Paint;]
+  + Fieldref [com/example/Cannon_Game/CannonView.L Landroid/graphics/Paint;]
+  + Fieldref [com/example/Cannon_Game/CannonView.M Landroid/graphics/Paint;]
+  + Fieldref [com/example/Cannon_Game/CannonView.N Landroid/graphics/Paint;]
+  + Fieldref [com/example/Cannon_Game/CannonView.O Landroid/graphics/Paint;]
+  + Fieldref [com/example/Cannon_Game/CannonView.P Landroid/graphics/Paint;]
+  + Fieldref [com/example/Cannon_Game/CannonView.a Lcom/example/Cannon_Game/d;]
+  + Fieldref [com/example/Cannon_Game/CannonView.b Landroid/app/Activity;]
+  + Fieldref [com/example/Cannon_Game/CannonView.c Z]
+  + Fieldref [com/example/Cannon_Game/CannonView.d Z]
+  + Fieldref [com/example/Cannon_Game/CannonView.e D]
+  + Fieldref [com/example/Cannon_Game/CannonView.f I]
+  + Fieldref [com/example/Cannon_Game/CannonView.g D]
+  + Fieldref [com/example/Cannon_Game/CannonView.h Lcom/example/Cannon_Game/e;]
+  + Fieldref [com/example/Cannon_Game/CannonView.i I]
+  + Fieldref [com/example/Cannon_Game/CannonView.j I]
+  + Fieldref [com/example/Cannon_Game/CannonView.k I]
+  + Fieldref [com/example/Cannon_Game/CannonView.l I]
+  + Fieldref [com/example/Cannon_Game/CannonView.m F]
+  + Fieldref [com/example/Cannon_Game/CannonView.n Lcom/example/Cannon_Game/e;]
+  + Fieldref [com/example/Cannon_Game/CannonView.o I]
+  + Fieldref [com/example/Cannon_Game/CannonView.p I]
+  + Fieldref [com/example/Cannon_Game/CannonView.q D]
+  + Fieldref [com/example/Cannon_Game/CannonView.r I]
+  + Fieldref [com/example/Cannon_Game/CannonView.s I]
+  + Fieldref [com/example/Cannon_Game/CannonView.t F]
+  + Fieldref [com/example/Cannon_Game/CannonView.u I]
+  + Fieldref [com/example/Cannon_Game/CannonView.v [Z]
+  + Fieldref [com/example/Cannon_Game/CannonView.w I]
+  + Fieldref [com/example/Cannon_Game/CannonView.x Landroid/graphics/Point;]
+  + Fieldref [com/example/Cannon_Game/CannonView.y I]
+  + Fieldref [com/example/Cannon_Game/CannonView.z I]
+  + Fieldref [com/example/Cannon_Game/e.a Landroid/graphics/Point;]
+  + Fieldref [com/example/Cannon_Game/e.b Landroid/graphics/Point;]
+  + Methodref [android/app/Activity.runOnUiThread (Ljava/lang/Runnable;)V]
+  + Methodref [android/app/AlertDialog$Builder.<init> (Landroid/content/Context;)V]
+  + Methodref [android/app/AlertDialog$Builder.setCancelable (Z)Landroid/app/AlertDialog$Builder;]
+  + Methodref [android/app/AlertDialog$Builder.setMessage (Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
+  + Methodref [android/app/AlertDialog$Builder.setPositiveButton (ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
+  + Methodref [android/app/AlertDialog$Builder.setTitle (Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
+  + Methodref [android/content/res/Resources.getString (I)Ljava/lang/String;]
+  + Methodref [android/content/res/Resources.getString (I[Ljava/lang/Object;)Ljava/lang/String;]
+  + Methodref [android/graphics/Canvas.drawCircle (FFFLandroid/graphics/Paint;)V]
+  + Methodref [android/graphics/Canvas.drawLine (FFFFLandroid/graphics/Paint;)V]
+  + Methodref [android/graphics/Canvas.drawRect (FFFFLandroid/graphics/Paint;)V]
+  + Methodref [android/graphics/Canvas.drawText (Ljava/lang/String;FFLandroid/graphics/Paint;)V]
+  + Methodref [android/graphics/Canvas.getHeight ()I]
+  + Methodref [android/graphics/Canvas.getWidth ()I]
+  + Methodref [android/graphics/Paint.<init> ()V]
+  + Methodref [android/graphics/Paint.setAntiAlias (Z)V]
+  + Methodref [android/graphics/Paint.setColor (I)V]
+  + Methodref [android/graphics/Paint.setStrokeWidth (F)V]
+  + Methodref [android/graphics/Paint.setTextSize (F)V]
+  + Methodref [android/graphics/Point.<init> ()V]
+  + Methodref [android/graphics/Point.<init> (II)V]
+  + Methodref [android/graphics/Point.set (II)V]
+  + Methodref [android/media/SoundPool.<init> (III)V]
+  + Methodref [android/media/SoundPool.load (Landroid/content/Context;II)I]
+  + Methodref [android/media/SoundPool.play (IFFIIF)I]
+  + Methodref [android/media/SoundPool.release ()V]
+  + Methodref [android/view/MotionEvent.getX ()F]
+  + Methodref [android/view/MotionEvent.getY ()F]
+  + Methodref [android/view/SurfaceView.<init> (Landroid/content/Context;Landroid/util/AttributeSet;)V]
+  + Methodref [android/view/SurfaceView.onSizeChanged (IIII)V]
+  + Methodref [com/example/Cannon_Game/CannonView.a ()V]
+  + Methodref [com/example/Cannon_Game/CannonView.a (D)V]
+  + Methodref [com/example/Cannon_Game/CannonView.a (I)V]
+  + Methodref [com/example/Cannon_Game/CannonView.b (Landroid/view/MotionEvent;)D]
+  + Methodref [com/example/Cannon_Game/CannonView.getContext ()Landroid/content/Context;]
+  + Methodref [com/example/Cannon_Game/CannonView.getHolder ()Landroid/view/SurfaceHolder;]
+  + Methodref [com/example/Cannon_Game/CannonView.getResources ()Landroid/content/res/Resources;]
+  + Methodref [com/example/Cannon_Game/b.<init> (Lcom/example/Cannon_Game/CannonView;)V]
+  + Methodref [com/example/Cannon_Game/c.<init> (Lcom/example/Cannon_Game/CannonView;Landroid/app/AlertDialog$Builder;)V]
+  + Methodref [com/example/Cannon_Game/d.<init> (Lcom/example/Cannon_Game/CannonView;Landroid/view/SurfaceHolder;)V]
+  + Methodref [com/example/Cannon_Game/d.a (Z)V]
+  + Methodref [com/example/Cannon_Game/d.join ()V]
+  + Methodref [com/example/Cannon_Game/d.start ()V]
+  + Methodref [com/example/Cannon_Game/e.<init> ()V]
+  + Methodref [java/lang/Double.valueOf (D)Ljava/lang/Double;]
+  + Methodref [java/lang/Integer.intValue ()I]
+  + Methodref [java/lang/Integer.valueOf (I)Ljava/lang/Integer;]
+  + Methodref [java/lang/Math.atan (D)D]
+  + Methodref [java/lang/Math.cos (D)D]
+  + Methodref [java/lang/Math.sin (D)D]
+  + Methodref [java/util/HashMap.<init> ()V]
+  + InterfaceMethodref [android/view/SurfaceHolder.addCallback (Landroid/view/SurfaceHolder$Callback;)V]
+  + InterfaceMethodref [java/util/Map.get (Ljava/lang/Object;)Ljava/lang/Object;]
+  + InterfaceMethodref [java/util/Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;]
+  + NameAndType [<init> ()V]
+  + NameAndType [<init> (II)V]
+  + NameAndType [<init> (III)V]
+  + NameAndType [<init> (Landroid/content/Context;)V]
+  + NameAndType [<init> (Landroid/content/Context;Landroid/util/AttributeSet;)V]
+  + NameAndType [<init> (Lcom/example/Cannon_Game/CannonView;)V]
+  + NameAndType [<init> (Lcom/example/Cannon_Game/CannonView;Landroid/app/AlertDialog$Builder;)V]
+  + NameAndType [<init> (Lcom/example/Cannon_Game/CannonView;Landroid/view/SurfaceHolder;)V]
+  + NameAndType [A Z]
+  + NameAndType [B I]
+  + NameAndType [C I]
+  + NameAndType [D I]
+  + NameAndType [E I]
+  + NameAndType [F Landroid/graphics/Point;]
+  + NameAndType [G I]
+  + NameAndType [H I]
+  + NameAndType [I Landroid/media/SoundPool;]
+  + NameAndType [J Ljava/util/Map;]
+  + NameAndType [K Landroid/graphics/Paint;]
+  + NameAndType [L Landroid/graphics/Paint;]
+  + NameAndType [M Landroid/graphics/Paint;]
+  + NameAndType [N Landroid/graphics/Paint;]
+  + NameAndType [O Landroid/graphics/Paint;]
+  + NameAndType [P Landroid/graphics/Paint;]
+  + NameAndType [a ()V]
+  + NameAndType [a (D)V]
+  + NameAndType [a (I)V]
+  + NameAndType [a (Z)V]
+  + NameAndType [a Landroid/graphics/Point;]
+  + NameAndType [a Lcom/example/Cannon_Game/d;]
+  + NameAndType [addCallback (Landroid/view/SurfaceHolder$Callback;)V]
+  + NameAndType [atan (D)D]
+  + NameAndType [b (Landroid/view/MotionEvent;)D]
+  + NameAndType [b Landroid/app/Activity;]
+  + NameAndType [b Landroid/graphics/Point;]
+  + NameAndType [c Z]
+  + NameAndType [cos (D)D]
+  + NameAndType [d Z]
+  + NameAndType [drawCircle (FFFLandroid/graphics/Paint;)V]
+  + NameAndType [drawLine (FFFFLandroid/graphics/Paint;)V]
+  + NameAndType [drawRect (FFFFLandroid/graphics/Paint;)V]
+  + NameAndType [drawText (Ljava/lang/String;FFLandroid/graphics/Paint;)V]
+  + NameAndType [e D]
+  + NameAndType [f I]
+  + NameAndType [g D]
+  + NameAndType [get (Ljava/lang/Object;)Ljava/lang/Object;]
+  + NameAndType [getContext ()Landroid/content/Context;]
+  + NameAndType [getHeight ()I]
+  + NameAndType [getHolder ()Landroid/view/SurfaceHolder;]
+  + NameAndType [getResources ()Landroid/content/res/Resources;]
+  + NameAndType [getString (I)Ljava/lang/String;]
+  + NameAndType [getString (I[Ljava/lang/Object;)Ljava/lang/String;]
+  + NameAndType [getWidth ()I]
+  + NameAndType [getX ()F]
+  + NameAndType [getY ()F]
+  + NameAndType [h Lcom/example/Cannon_Game/e;]
+  + NameAndType [i I]
+  + NameAndType [intValue ()I]
+  + NameAndType [j I]
+  + NameAndType [join ()V]
+  + NameAndType [k I]
+  + NameAndType [l I]
+  + NameAndType [load (Landroid/content/Context;II)I]
+  + NameAndType [m F]
+  + NameAndType [n Lcom/example/Cannon_Game/e;]
+  + NameAndType [o I]
+  + NameAndType [onSizeChanged (IIII)V]
+  + NameAndType [p I]
+  + NameAndType [play (IFFIIF)I]
+  + NameAndType [put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;]
+  + NameAndType [q D]
+  + NameAndType [r I]
+  + NameAndType [release ()V]
+  + NameAndType [runOnUiThread (Ljava/lang/Runnable;)V]
+  + NameAndType [s I]
+  + NameAndType [set (II)V]
+  + NameAndType [setAntiAlias (Z)V]
+  + NameAndType [setCancelable (Z)Landroid/app/AlertDialog$Builder;]
+  + NameAndType [setColor (I)V]
+  + NameAndType [setMessage (Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
+  + NameAndType [setPositiveButton (ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
+  + NameAndType [setStrokeWidth (F)V]
+  + NameAndType [setTextSize (F)V]
+  + NameAndType [setTitle (Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
+  + NameAndType [sin (D)D]
+  + NameAndType [start ()V]
+  + NameAndType [t F]
+  + NameAndType [u I]
+  + NameAndType [v [Z]
+  + NameAndType [valueOf (D)Ljava/lang/Double;]
+  + NameAndType [valueOf (I)Ljava/lang/Integer;]
+  + NameAndType [w I]
+  + NameAndType [x I]
+  + NameAndType [x Landroid/graphics/Point;]
+  + NameAndType [y I]
+  + NameAndType [z I]
+  + Utf8 [()F]
+  + Utf8 [()I]
+  + Utf8 [()Landroid/content/Context;]
+  + Utf8 [()Landroid/content/res/Resources;]
+  + Utf8 [()Landroid/view/SurfaceHolder;]
+  + Utf8 [()V]
+  + Utf8 [(D)D]
+  + Utf8 [(D)Ljava/lang/Double;]
+  + Utf8 [(D)V]
+  + Utf8 [(F)V]
+  + Utf8 [(FFFFLandroid/graphics/Paint;)V]
+  + Utf8 [(FFFLandroid/graphics/Paint;)V]
+  + Utf8 [(I)Ljava/lang/Integer;]
+  + Utf8 [(I)Ljava/lang/String;]
+  + Utf8 [(I)V]
+  + Utf8 [(IFFIIF)I]
+  + Utf8 [(II)V]
+  + Utf8 [(III)V]
+  + Utf8 [(IIII)V]
+  + Utf8 [(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
+  + Utf8 [(I[Ljava/lang/Object;)Ljava/lang/String;]
+  + Utf8 [(Landroid/content/Context;)V]
+  + Utf8 [(Landroid/content/Context;II)I]
+  + Utf8 [(Landroid/content/Context;Landroid/util/AttributeSet;)V]
+  + Utf8 [(Landroid/graphics/Canvas;)V]
+  + Utf8 [(Landroid/view/MotionEvent;)D]
+  + Utf8 [(Landroid/view/MotionEvent;)V]
+  + Utf8 [(Landroid/view/SurfaceHolder$Callback;)V]
+  + Utf8 [(Landroid/view/SurfaceHolder;)V]
+  + Utf8 [(Landroid/view/SurfaceHolder;III)V]
+  + Utf8 [(Lcom/example/Cannon_Game/CannonView;)V]
+  + Utf8 [(Lcom/example/Cannon_Game/CannonView;D)D]
+  + Utf8 [(Lcom/example/Cannon_Game/CannonView;D)V]
+  + Utf8 [(Lcom/example/Cannon_Game/CannonView;Landroid/app/AlertDialog$Builder;)V]
+  + Utf8 [(Lcom/example/Cannon_Game/CannonView;Landroid/view/SurfaceHolder;)V]
+  + Utf8 [(Lcom/example/Cannon_Game/CannonView;Z)Z]
+  + Utf8 [(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
+  + Utf8 [(Ljava/lang/Object;)Ljava/lang/Object;]
+  + Utf8 [(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;]
+  + Utf8 [(Ljava/lang/Runnable;)V]
+  + Utf8 [(Ljava/lang/String;FFLandroid/graphics/Paint;)V]
+  + Utf8 [(Z)Landroid/app/AlertDialog$Builder;]
+  + Utf8 [(Z)V]
+  + Utf8 [<init>]
+  + Utf8 [A]
+  + Utf8 [B]
+  + Utf8 [C]
+  + Utf8 [Code]
+  + Utf8 [D]
+  + Utf8 [E]
+  + Utf8 [F]
+  + Utf8 [G]
+  + Utf8 [H]
+  + Utf8 [I]
+  + Utf8 [J]
+  + Utf8 [K]
+  + Utf8 [L]
+  + Utf8 [Landroid/app/Activity;]
+  + Utf8 [Landroid/graphics/Paint;]
+  + Utf8 [Landroid/graphics/Point;]
+  + Utf8 [Landroid/media/SoundPool;]
+  + Utf8 [Lcom/example/Cannon_Game/d;]
+  + Utf8 [Lcom/example/Cannon_Game/e;]
+  + Utf8 [Ljava/util/Map;]
+  + Utf8 [M]
+  + Utf8 [N]
+  + Utf8 [O]
+  + Utf8 [P]
+  + Utf8 [StackMapTable]
+  + Utf8 [Z]
+  + Utf8 [[Z]
+  + Utf8 [a]
+  + Utf8 [addCallback]
+  + Utf8 [android/app/Activity]
+  + Utf8 [android/app/AlertDialog$Builder]
+  + Utf8 [android/content/res/Resources]
+  + Utf8 [android/graphics/Canvas]
+  + Utf8 [android/graphics/Paint]
+  + Utf8 [android/graphics/Point]
+  + Utf8 [android/media/SoundPool]
+  + Utf8 [android/view/MotionEvent]
+  + Utf8 [android/view/SurfaceHolder]
+  + Utf8 [android/view/SurfaceHolder$Callback]
+  + Utf8 [android/view/SurfaceView]
+  + Utf8 [atan]
+  + Utf8 [b]
+  + Utf8 [c]
+  + Utf8 [com/example/Cannon_Game/CannonView]
+  + Utf8 [com/example/Cannon_Game/b]
+  + Utf8 [com/example/Cannon_Game/c]
+  + Utf8 [com/example/Cannon_Game/d]
+  + Utf8 [com/example/Cannon_Game/e]
+  + Utf8 [cos]
+  + Utf8 [d]
+  + Utf8 [drawCircle]
+  + Utf8 [drawLine]
+  + Utf8 [drawRect]
+  + Utf8 [drawText]
+  + Utf8 [e]
+  + Utf8 [f]
+  + Utf8 [g]
+  + Utf8 [get]
+  + Utf8 [getContext]
+  + Utf8 [getHeight]
+  + Utf8 [getHolder]
+  + Utf8 [getResources]
+  + Utf8 [getString]
+  + Utf8 [getWidth]
+  + Utf8 [getX]
+  + Utf8 [getY]
+  + Utf8 [h]
+  + Utf8 [i]
+  + Utf8 [intValue]
+  + Utf8 [j]
+  + Utf8 [java/lang/Double]
+  + Utf8 [java/lang/Integer]
+  + Utf8 [java/lang/InterruptedException]
+  + Utf8 [java/lang/Math]
+  + Utf8 [java/lang/Object]
+  + Utf8 [java/util/HashMap]
+  + Utf8 [java/util/Map]
+  + Utf8 [join]
+  + Utf8 [k]
+  + Utf8 [l]
+  + Utf8 [load]
+  + Utf8 [m]
+  + Utf8 [n]
+  + Utf8 [o]
+  + Utf8 [onSizeChanged]
+  + Utf8 [p]
+  + Utf8 [play]
+  + Utf8 [put]
+  + Utf8 [q]
+  + Utf8 [r]
+  + Utf8 [release]
+  + Utf8 [runOnUiThread]
+  + Utf8 [s]
+  + Utf8 [set]
+  + Utf8 [setAntiAlias]
+  + Utf8 [setCancelable]
+  + Utf8 [setColor]
+  + Utf8 [setMessage]
+  + Utf8 [setPositiveButton]
+  + Utf8 [setStrokeWidth]
+  + Utf8 [setTextSize]
+  + Utf8 [setTitle]
+  + Utf8 [sin]
+  + Utf8 [start]
+  + Utf8 [surfaceChanged]
+  + Utf8 [surfaceCreated]
+  + Utf8 [surfaceDestroyed]
+  + Utf8 [t]
+  + Utf8 [u]
+  + Utf8 [v]
+  + Utf8 [valueOf]
+  + Utf8 [w]
+  + Utf8 [x]
+  + Utf8 [y]
+  + Utf8 [z]
+
+Fields (count = 42):
+  + Field:        a Lcom/example/Cannon_Game/d;
+    Access flags: 0x2
+      = private com.example.Cannon_Game.d a
+  + Field:        b Landroid/app/Activity;
+    Access flags: 0x2
+      = private android.app.Activity b
+  + Field:        c Z
+    Access flags: 0x2
+      = private boolean c
+  + Field:        d Z
+    Access flags: 0x2
+      = private boolean d
+  + Field:        e D
+    Access flags: 0x2
+      = private double e
+  + Field:        f I
+    Access flags: 0x2
+      = private int f
+  + Field:        g D
+    Access flags: 0x2
+      = private double g
+  + Field:        h Lcom/example/Cannon_Game/e;
+    Access flags: 0x2
+      = private com.example.Cannon_Game.e h
+  + Field:        i I
+    Access flags: 0x2
+      = private int i
+  + Field:        j I
+    Access flags: 0x2
+      = private int j
+  + Field:        k I
+    Access flags: 0x2
+      = private int k
+  + Field:        l I
+    Access flags: 0x2
+      = private int l
+  + Field:        m F
+    Access flags: 0x2
+      = private float m
+  + Field:        n Lcom/example/Cannon_Game/e;
+    Access flags: 0x2
+      = private com.example.Cannon_Game.e n
+  + Field:        o I
+    Access flags: 0x2
+      = private int o
+  + Field:        p I
+    Access flags: 0x2
+      = private int p
+  + Field:        q D
+    Access flags: 0x2
+      = private double q
+  + Field:        r I
+    Access flags: 0x2
+      = private int r
+  + Field:        s I
+    Access flags: 0x2
+      = private int s
+  + Field:        t F
+    Access flags: 0x2
+      = private float t
+  + Field:        u I
+    Access flags: 0x2
+      = private int u
+  + Field:        v [Z
+    Access flags: 0x2
+      = private boolean[] v
+  + Field:        w I
+    Access flags: 0x2
+      = private int w
+  + Field:        x Landroid/graphics/Point;
+    Access flags: 0x2
+      = private android.graphics.Point x
+  + Field:        y I
+    Access flags: 0x2
+      = private int y
+  + Field:        z I
+    Access flags: 0x2
+      = private int z
+  + Field:        A Z
+    Access flags: 0x2
+      = private boolean A
+  + Field:        B I
+    Access flags: 0x2
+      = private int B
+  + Field:        C I
+    Access flags: 0x2
+      = private int C
+  + Field:        D I
+    Access flags: 0x2
+      = private int D
+  + Field:        E I
+    Access flags: 0x2
+      = private int E
+  + Field:        F Landroid/graphics/Point;
+    Access flags: 0x2
+      = private android.graphics.Point F
+  + Field:        G I
+    Access flags: 0x2
+      = private int G
+  + Field:        H I
+    Access flags: 0x2
+      = private int H
+  + Field:        I Landroid/media/SoundPool;
+    Access flags: 0x2
+      = private android.media.SoundPool I
+  + Field:        J Ljava/util/Map;
+    Access flags: 0x2
+      = private java.util.Map J
+  + Field:        K Landroid/graphics/Paint;
+    Access flags: 0x2
+      = private android.graphics.Paint K
+  + Field:        L Landroid/graphics/Paint;
+    Access flags: 0x2
+      = private android.graphics.Paint L
+  + Field:        M Landroid/graphics/Paint;
+    Access flags: 0x2
+      = private android.graphics.Paint M
+  + Field:        N Landroid/graphics/Paint;
+    Access flags: 0x2
+      = private android.graphics.Paint N
+  + Field:        O Landroid/graphics/Paint;
+    Access flags: 0x2
+      = private android.graphics.Paint O
+  + Field:        P Landroid/graphics/Paint;
+    Access flags: 0x2
+      = private android.graphics.Paint P
+
+Methods (count = 16):
+  - Method:       <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    Access flags: 0x1
+      = public CannonView(android.content.Context,android.util.AttributeSet)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 246, locals = 3, stack = 6):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] aload_2 v2
+      [3] invokespecial #121
+        + Methodref [android/view/SurfaceView.<init> (Landroid/content/Context;Landroid/util/AttributeSet;)V]
+      [6] aload_0 v0
+      [7] iconst_0
+      [8] putfield #67
+        + Fieldref [com/example/Cannon_Game/CannonView.c Z]
+      [11] aload_0 v0
+      [12] aload_1 v1
+      [13] checkcast #14
+        + Class [android/app/Activity]
+      [16] putfield #66
+        + Fieldref [com/example/Cannon_Game/CannonView.b Landroid/app/Activity;]
+      [19] aload_0 v0
+      [20] invokevirtual #128
+        + Methodref [com/example/Cannon_Game/CannonView.getHolder ()Landroid/view/SurfaceHolder;]
+      [23] aload_0 v0
+      [24] invokeinterface #144
+        + InterfaceMethodref [android/view/SurfaceHolder.addCallback (Landroid/view/SurfaceHolder$Callback;)V]
+      [29] aload_0 v0
+      [30] new #29
+        + Class [com/example/Cannon_Game/e]
+      [33] dup
+      [34] invokespecial #136
+        + Methodref [com/example/Cannon_Game/e.<init> ()V]
+      [37] putfield #72
+        + Fieldref [com/example/Cannon_Game/CannonView.h Lcom/example/Cannon_Game/e;]
+      [40] aload_0 v0
+      [41] new #29
+        + Class [com/example/Cannon_Game/e]
+      [44] dup
+      [45] invokespecial #136
+        + Methodref [com/example/Cannon_Game/e.<init> ()V]
+      [48] putfield #78
+        + Fieldref [com/example/Cannon_Game/CannonView.n Lcom/example/Cannon_Game/e;]
+      [51] aload_0 v0
+      [52] new #19
+        + Class [android/graphics/Point]
+      [55] dup
+      [56] invokespecial #112
+        + Methodref [android/graphics/Point.<init> ()V]
+      [59] putfield #88
+        + Fieldref [com/example/Cannon_Game/CannonView.x Landroid/graphics/Point;]
+      [62] aload_0 v0
+      [63] bipush 7
+      [65] newarray 4
+      [67] putfield #86
+        + Fieldref [com/example/Cannon_Game/CannonView.v [Z]
+      [70] aload_0 v0
+      [71] new #20
+        + Class [android/media/SoundPool]
+      [74] dup
+      [75] iconst_1
+      [76] iconst_3
+      [77] iconst_0
+      [78] invokespecial #115
+        + Methodref [android/media/SoundPool.<init> (III)V]
+      [81] putfield #57
+        + Fieldref [com/example/Cannon_Game/CannonView.I Landroid/media/SoundPool;]
+      [84] aload_0 v0
+      [85] new #35
+        + Class [java/util/HashMap]
+      [88] dup
+      [89] invokespecial #143
+        + Methodref [java/util/HashMap.<init> ()V]
+      [92] putfield #58
+        + Fieldref [com/example/Cannon_Game/CannonView.J Ljava/util/Map;]
+      [95] aload_0 v0
+      [96] getfield #58
+        + Fieldref [com/example/Cannon_Game/CannonView.J Ljava/util/Map;]
+      [99] iconst_0
+      [100] invokestatic #139
+        + Methodref [java/lang/Integer.valueOf (I)Ljava/lang/Integer;]
+      [103] aload_0 v0
+      [104] getfield #57
+        + Fieldref [com/example/Cannon_Game/CannonView.I Landroid/media/SoundPool;]
+      [107] aload_1 v1
+      [108] ldc #4
+        + Integer [2130968578]
+      [110] iconst_1
+      [111] invokevirtual #116
+        + Methodref [android/media/SoundPool.load (Landroid/content/Context;II)I]
+      [114] invokestatic #139
+        + Methodref [java/lang/Integer.valueOf (I)Ljava/lang/Integer;]
+      [117] invokeinterface #146
+        + InterfaceMethodref [java/util/Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;]
+      [122] pop
+      [123] aload_0 v0
+      [124] getfield #58
+        + Fieldref [com/example/Cannon_Game/CannonView.J Ljava/util/Map;]
+      [127] iconst_1
+      [128] invokestatic #139
+        + Methodref [java/lang/Integer.valueOf (I)Ljava/lang/Integer;]
+      [131] aload_0 v0
+      [132] getfield #57
+        + Fieldref [com/example/Cannon_Game/CannonView.I Landroid/media/SoundPool;]
+      [135] aload_1 v1
+      [136] ldc #3
+        + Integer [2130968577]
+      [138] iconst_1
+      [139] invokevirtual #116
+        + Methodref [android/media/SoundPool.load (Landroid/content/Context;II)I]
+      [142] invokestatic #139
+        + Methodref [java/lang/Integer.valueOf (I)Ljava/lang/Integer;]
+      [145] invokeinterface #146
+        + InterfaceMethodref [java/util/Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;]
+      [150] pop
+      [151] aload_0 v0
+      [152] getfield #58
+        + Fieldref [com/example/Cannon_Game/CannonView.J Ljava/util/Map;]
+      [155] iconst_2
+      [156] invokestatic #139
+        + Methodref [java/lang/Integer.valueOf (I)Ljava/lang/Integer;]
+      [159] aload_0 v0
+      [160] getfield #57
+        + Fieldref [com/example/Cannon_Game/CannonView.I Landroid/media/SoundPool;]
+      [163] aload_1 v1
+      [164] ldc #2
+        + Integer [2130968576]
+      [166] iconst_1
+      [167] invokevirtual #116
+        + Methodref [android/media/SoundPool.load (Landroid/content/Context;II)I]
+      [170] invokestatic #139
+        + Methodref [java/lang/Integer.valueOf (I)Ljava/lang/Integer;]
+      [173] invokeinterface #146
+        + InterfaceMethodref [java/util/Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;]
+      [178] pop
+      [179] aload_0 v0
+      [180] new #18
+        + Class [android/graphics/Paint]
+      [183] dup
+      [184] invokespecial #107
+        + Methodref [android/graphics/Paint.<init> ()V]
+      [187] putfield #59
+        + Fieldref [com/example/Cannon_Game/CannonView.K Landroid/graphics/Paint;]
+      [190] aload_0 v0
+      [191] new #18
+        + Class [android/graphics/Paint]
+      [194] dup
+      [195] invokespecial #107
+        + Methodref [android/graphics/Paint.<init> ()V]
+      [198] putfield #61
+        + Fieldref [com/example/Cannon_Game/CannonView.M Landroid/graphics/Paint;]
+      [201] aload_0 v0
+      [202] new #18
+        + Class [android/graphics/Paint]
+      [205] dup
+      [206] invokespecial #107
+        + Methodref [android/graphics/Paint.<init> ()V]
+      [209] putfield #60
+        + Fieldref [com/example/Cannon_Game/CannonView.L Landroid/graphics/Paint;]
+      [212] aload_0 v0
+      [213] new #18
+        + Class [android/graphics/Paint]
+      [216] dup
+      [217] invokespecial #107
+        + Methodref [android/graphics/Paint.<init> ()V]
+      [220] putfield #62
+        + Fieldref [com/example/Cannon_Game/CannonView.N Landroid/graphics/Paint;]
+      [223] aload_0 v0
+      [224] new #18
+        + Class [android/graphics/Paint]
+      [227] dup
+      [228] invokespecial #107
+        + Methodref [android/graphics/Paint.<init> ()V]
+      [231] putfield #63
+        + Fieldref [com/example/Cannon_Game/CannonView.O Landroid/graphics/Paint;]
+      [234] aload_0 v0
+      [235] new #18
+        + Class [android/graphics/Paint]
+      [238] dup
+      [239] invokespecial #107
+        + Methodref [android/graphics/Paint.<init> ()V]
+      [242] putfield #64
+        + Fieldref [com/example/Cannon_Game/CannonView.P Landroid/graphics/Paint;]
+      [245] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onSizeChanged(IIII)V
+    Access flags: 0x4
+      = protected void onSizeChanged(int,int,int,int)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 328, locals = 5, stack = 6):
+      [0] aload_0 v0
+      [1] iload_1 v1
+      [2] iload_2 v2
+      [3] iload_3 v3
+      [4] iload v4
+      [6] invokespecial #122
+        + Methodref [android/view/SurfaceView.onSizeChanged (IIII)V]
+      [9] aload_0 v0
+      [10] iload_1 v1
+      [11] putfield #55
+        + Fieldref [com/example/Cannon_Game/CannonView.G I]
+      [14] aload_0 v0
+      [15] iload_2 v2
+      [16] putfield #56
+        + Fieldref [com/example/Cannon_Game/CannonView.H I]
+      [19] aload_0 v0
+      [20] iload_2 v2
+      [21] bipush 18
+      [23] idiv
+      [24] putfield #52
+        + Fieldref [com/example/Cannon_Game/CannonView.D I]
+      [27] aload_0 v0
+      [28] iload_1 v1
+      [29] bipush 8
+      [31] idiv
+      [32] putfield #53
+        + Fieldref [com/example/Cannon_Game/CannonView.E I]
+      [35] aload_0 v0
+      [36] iload_1 v1
+      [37] bipush 36
+      [39] idiv
+      [40] putfield #50
+        + Fieldref [com/example/Cannon_Game/CannonView.B I]
+      [43] aload_0 v0
+      [44] iload_1 v1
+      [45] iconst_3
+      [46] imul
+      [47] iconst_2
+      [48] idiv
+      [49] putfield #51
+        + Fieldref [com/example/Cannon_Game/CannonView.C I]
+      [52] aload_0 v0
+      [53] iload_1 v1
+      [54] bipush 24
+      [56] idiv
+      [57] putfield #85
+        + Fieldref [com/example/Cannon_Game/CannonView.u I]
+      [60] aload_0 v0
+      [61] iload_1 v1
+      [62] iconst_5
+      [63] imul
+      [64] bipush 8
+      [66] idiv
+      [67] putfield #73
+        + Fieldref [com/example/Cannon_Game/CannonView.i I]
+      [70] aload_0 v0
+      [71] iload_2 v2
+      [72] bipush 8
+      [74] idiv
+      [75] putfield #74
+        + Fieldref [com/example/Cannon_Game/CannonView.j I]
+      [78] aload_0 v0
+      [79] iload_2 v2
+      [80] iconst_3
+      [81] imul
+      [82] bipush 8
+      [84] idiv
+      [85] putfield #75
+        + Fieldref [com/example/Cannon_Game/CannonView.k I]
+      [88] aload_0 v0
+      [89] iload_2 v2
+      [90] iconst_2
+      [91] idiv
+      [92] putfield #76
+        + Fieldref [com/example/Cannon_Game/CannonView.l I]
+      [95] aload_0 v0
+      [96] getfield #72
+        + Fieldref [com/example/Cannon_Game/CannonView.h Lcom/example/Cannon_Game/e;]
+      [99] new #19
+        + Class [android/graphics/Point]
+      [102] dup
+      [103] aload_0 v0
+      [104] getfield #73
+        + Fieldref [com/example/Cannon_Game/CannonView.i I]
+      [107] aload_0 v0
+      [108] getfield #74
+        + Fieldref [com/example/Cannon_Game/CannonView.j I]
+      [111] invokespecial #113
+        + Methodref [android/graphics/Point.<init> (II)V]
+      [114] putfield #91
+        + Fieldref [com/example/Cannon_Game/e.a Landroid/graphics/Point;]
+      [117] aload_0 v0
+      [118] getfield #72
+        + Fieldref [com/example/Cannon_Game/CannonView.h Lcom/example/Cannon_Game/e;]
+      [121] new #19
+        + Class [android/graphics/Point]
+      [124] dup
+      [125] aload_0 v0
+      [126] getfield #73
+        + Fieldref [com/example/Cannon_Game/CannonView.i I]
+      [129] aload_0 v0
+      [130] getfield #75
+        + Fieldref [com/example/Cannon_Game/CannonView.k I]
+      [133] invokespecial #113
+        + Methodref [android/graphics/Point.<init> (II)V]
+      [136] putfield #92
+        + Fieldref [com/example/Cannon_Game/e.b Landroid/graphics/Point;]
+      [139] aload_0 v0
+      [140] iload_1 v1
+      [141] bipush 7
+      [143] imul
+      [144] bipush 8
+      [146] idiv
+      [147] putfield #79
+        + Fieldref [com/example/Cannon_Game/CannonView.o I]
+      [150] aload_0 v0
+      [151] iload_2 v2
+      [152] bipush 8
+      [154] idiv
+      [155] putfield #80
+        + Fieldref [com/example/Cannon_Game/CannonView.p I]
+      [158] aload_0 v0
+      [159] iload_2 v2
+      [160] bipush 7
+      [162] imul
+      [163] bipush 8
+      [165] idiv
+      [166] putfield #82
+        + Fieldref [com/example/Cannon_Game/CannonView.r I]
+      [169] aload_0 v0
+      [170] aload_0 v0
+      [171] getfield #82
+        + Fieldref [com/example/Cannon_Game/CannonView.r I]
+      [174] aload_0 v0
+      [175] getfield #80
+        + Fieldref [com/example/Cannon_Game/CannonView.p I]
+      [178] isub
+      [179] bipush 7
+      [181] idiv
+      [182] i2d
+      [183] putfield #81
+        + Fieldref [com/example/Cannon_Game/CannonView.q D]
+      [186] aload_0 v0
+      [187] iload_2 v2
+      [188] ineg
+      [189] iconst_4
+      [190] idiv
+      [191] putfield #83
+        + Fieldref [com/example/Cannon_Game/CannonView.s I]
+      [194] aload_0 v0
+      [195] getfield #78
+        + Fieldref [com/example/Cannon_Game/CannonView.n Lcom/example/Cannon_Game/e;]
+      [198] new #19
+        + Class [android/graphics/Point]
+      [201] dup
+      [202] aload_0 v0
+      [203] getfield #79
+        + Fieldref [com/example/Cannon_Game/CannonView.o I]
+      [206] aload_0 v0
+      [207] getfield #80
+        + Fieldref [com/example/Cannon_Game/CannonView.p I]
+      [210] invokespecial #113
+        + Methodref [android/graphics/Point.<init> (II)V]
+      [213] putfield #91
+        + Fieldref [com/example/Cannon_Game/e.a Landroid/graphics/Point;]
+      [216] aload_0 v0
+      [217] getfield #78
+        + Fieldref [com/example/Cannon_Game/CannonView.n Lcom/example/Cannon_Game/e;]
+      [220] new #19
+        + Class [android/graphics/Point]
+      [223] dup
+      [224] aload_0 v0
+      [225] getfield #79
+        + Fieldref [com/example/Cannon_Game/CannonView.o I]
+      [228] aload_0 v0
+      [229] getfield #82
+        + Fieldref [com/example/Cannon_Game/CannonView.r I]
+      [232] invokespecial #113
+        + Methodref [android/graphics/Point.<init> (II)V]
+      [235] putfield #92
+        + Fieldref [com/example/Cannon_Game/e.b Landroid/graphics/Point;]
+      [238] aload_0 v0
+      [239] new #19
+        + Class [android/graphics/Point]
+      [242] dup
+      [243] aload_0 v0
+      [244] getfield #53
+        + Fieldref [com/example/Cannon_Game/CannonView.E I]
+      [247] iload_2 v2
+      [248] iconst_2
+      [249] idiv
+      [250] invokespecial #113
+        + Methodref [android/graphics/Point.<init> (II)V]
+      [253] putfield #54
+        + Fieldref [com/example/Cannon_Game/CannonView.F Landroid/graphics/Point;]
+      [256] aload_0 v0
+      [257] getfield #59
+        + Fieldref [com/example/Cannon_Game/CannonView.K Landroid/graphics/Paint;]
+      [260] iload_1 v1
+      [261] bipush 20
+      [263] idiv
+      [264] i2f
+      [265] invokevirtual #111
+        + Methodref [android/graphics/Paint.setTextSize (F)V]
+      [268] aload_0 v0
+      [269] getfield #59
+        + Fieldref [com/example/Cannon_Game/CannonView.K Landroid/graphics/Paint;]
+      [272] iconst_1
+      [273] invokevirtual #108
+        + Methodref [android/graphics/Paint.setAntiAlias (Z)V]
+      [276] aload_0 v0
+      [277] getfield #61
+        + Fieldref [com/example/Cannon_Game/CannonView.M Landroid/graphics/Paint;]
+      [280] aload_0 v0
+      [281] getfield #85
+        + Fieldref [com/example/Cannon_Game/CannonView.u I]
+      [284] i2f
+      [285] ldc #11
+        + Float [1.5]
+      [287] fmul
+      [288] invokevirtual #110
+        + Methodref [android/graphics/Paint.setStrokeWidth (F)V]
+      [291] aload_0 v0
+      [292] getfield #62
+        + Fieldref [com/example/Cannon_Game/CannonView.N Landroid/graphics/Paint;]
+      [295] aload_0 v0
+      [296] getfield #85
+        + Fieldref [com/example/Cannon_Game/CannonView.u I]
+      [299] i2f
+      [300] invokevirtual #110
+        + Methodref [android/graphics/Paint.setStrokeWidth (F)V]
+      [303] aload_0 v0
+      [304] getfield #63
+        + Fieldref [com/example/Cannon_Game/CannonView.O Landroid/graphics/Paint;]
+      [307] aload_0 v0
+      [308] getfield #85
+        + Fieldref [com/example/Cannon_Game/CannonView.u I]
+      [311] i2f
+      [312] invokevirtual #110
+        + Methodref [android/graphics/Paint.setStrokeWidth (F)V]
+      [315] aload_0 v0
+      [316] getfield #64
+        + Fieldref [com/example/Cannon_Game/CannonView.P Landroid/graphics/Paint;]
+      [319] iconst_m1
+      [320] invokevirtual #109
+        + Methodref [android/graphics/Paint.setColor (I)V]
+      [323] aload_0 v0
+      [324] invokevirtual #123
+        + Methodref [com/example/Cannon_Game/CannonView.a ()V]
+      [327] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a()V
+    Access flags: 0x1
+      = public void a()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 174, locals = 2, stack = 5):
+      [0] iconst_0
+      [1] istore_1 v1
+      [2] iload_1 v1
+      [3] bipush 7
+      [5] ificmpge +16 (target=21)
+      [8] aload_0 v0
+      [9] getfield #86
+        + Fieldref [com/example/Cannon_Game/CannonView.v [Z]
+      [12] iload_1 v1
+      [13] iconst_0
+      [14] bastore
+      [15] iinc v1, 1
+      [18] goto -16 (target=2)
+      [21] aload_0 v0
+      [22] iconst_0
+      [23] putfield #87
+        + Fieldref [com/example/Cannon_Game/CannonView.w I]
+      [26] aload_0 v0
+      [27] aload_0 v0
+      [28] getfield #76
+        + Fieldref [com/example/Cannon_Game/CannonView.l I]
+      [31] i2f
+      [32] putfield #77
+        + Fieldref [com/example/Cannon_Game/CannonView.m F]
+      [35] aload_0 v0
+      [36] aload_0 v0
+      [37] getfield #83
+        + Fieldref [com/example/Cannon_Game/CannonView.s I]
+      [40] i2f
+      [41] putfield #84
+        + Fieldref [com/example/Cannon_Game/CannonView.t F]
+      [44] aload_0 v0
+      [45] ldc2_w #43
+        + Double [10.0]
+      [48] putfield #69
+        + Fieldref [com/example/Cannon_Game/CannonView.e D]
+      [51] aload_0 v0
+      [52] iconst_0
+      [53] putfield #49
+        + Fieldref [com/example/Cannon_Game/CannonView.A Z]
+      [56] aload_0 v0
+      [57] iconst_0
+      [58] putfield #70
+        + Fieldref [com/example/Cannon_Game/CannonView.f I]
+      [61] aload_0 v0
+      [62] dconst_0
+      [63] putfield #71
+        + Fieldref [com/example/Cannon_Game/CannonView.g D]
+      [66] aload_0 v0
+      [67] getfield #72
+        + Fieldref [com/example/Cannon_Game/CannonView.h Lcom/example/Cannon_Game/e;]
+      [70] getfield #91
+        + Fieldref [com/example/Cannon_Game/e.a Landroid/graphics/Point;]
+      [73] aload_0 v0
+      [74] getfield #73
+        + Fieldref [com/example/Cannon_Game/CannonView.i I]
+      [77] aload_0 v0
+      [78] getfield #74
+        + Fieldref [com/example/Cannon_Game/CannonView.j I]
+      [81] invokevirtual #114
+        + Methodref [android/graphics/Point.set (II)V]
+      [84] aload_0 v0
+      [85] getfield #72
+        + Fieldref [com/example/Cannon_Game/CannonView.h Lcom/example/Cannon_Game/e;]
+      [88] getfield #92
+        + Fieldref [com/example/Cannon_Game/e.b Landroid/graphics/Point;]
+      [91] aload_0 v0
+      [92] getfield #73
+        + Fieldref [com/example/Cannon_Game/CannonView.i I]
+      [95] aload_0 v0
+      [96] getfield #75
+        + Fieldref [com/example/Cannon_Game/CannonView.k I]
+      [99] invokevirtual #114
+        + Methodref [android/graphics/Point.set (II)V]
+      [102] aload_0 v0
+      [103] getfield #78
+        + Fieldref [com/example/Cannon_Game/CannonView.n Lcom/example/Cannon_Game/e;]
+      [106] getfield #91
+        + Fieldref [com/example/Cannon_Game/e.a Landroid/graphics/Point;]
+      [109] aload_0 v0
+      [110] getfield #79
+        + Fieldref [com/example/Cannon_Game/CannonView.o I]
+      [113] aload_0 v0
+      [114] getfield #80
+        + Fieldref [com/example/Cannon_Game/CannonView.p I]
+      [117] invokevirtual #114
+        + Methodref [android/graphics/Point.set (II)V]
+      [120] aload_0 v0
+      [121] getfield #78
+        + Fieldref [com/example/Cannon_Game/CannonView.n Lcom/example/Cannon_Game/e;]
+      [124] getfield #92
+        + Fieldref [com/example/Cannon_Game/e.b Landroid/graphics/Point;]
+      [127] aload_0 v0
+      [128] getfield #79
+        + Fieldref [com/example/Cannon_Game/CannonView.o I]
+      [131] aload_0 v0
+      [132] getfield #82
+        + Fieldref [com/example/Cannon_Game/CannonView.r I]
+      [135] invokevirtual #114
+        + Methodref [android/graphics/Point.set (II)V]
+      [138] aload_0 v0
+      [139] getfield #68
+        + Fieldref [com/example/Cannon_Game/CannonView.d Z]
+      [142] ifeq +31 (target=173)
+      [145] aload_0 v0
+      [146] iconst_0
+      [147] putfield #68
+        + Fieldref [com/example/Cannon_Game/CannonView.d Z]
+      [150] aload_0 v0
+      [151] new #28
+        + Class [com/example/Cannon_Game/d]
+      [154] dup
+      [155] aload_0 v0
+      [156] aload_0 v0
+      [157] invokevirtual #128
+        + Methodref [com/example/Cannon_Game/CannonView.getHolder ()Landroid/view/SurfaceHolder;]
+      [160] invokespecial #132
+        + Methodref [com/example/Cannon_Game/d.<init> (Lcom/example/Cannon_Game/CannonView;Landroid/view/SurfaceHolder;)V]
+      [163] putfield #65
+        + Fieldref [com/example/Cannon_Game/CannonView.a Lcom/example/Cannon_Game/d;]
+      [166] aload_0 v0
+      [167] getfield #65
+        + Fieldref [com/example/Cannon_Game/CannonView.a Lcom/example/Cannon_Game/d;]
+      [170] invokevirtual #135
+        + Methodref [com/example/Cannon_Game/d.start ()V]
+      [173] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 3):
+        - [2] Var: ...[i], Stack: (empty)
+        - [21] Var: -1, Stack: (empty)
+        - [173] Var: ..., Stack: (empty)
+  + Method:       a(D)V
+    Access flags: 0x2
+      = private void a(double)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 733, locals = 9, stack = 7):
+      [0] dload_1 v1
+      [1] ldc2_w #45
+        + Double [1000.0]
+      [4] ddiv
+      [5] dstore_3 v3
+      [6] aload_0 v0
+      [7] getfield #49
+        + Fieldref [com/example/Cannon_Game/CannonView.A Z]
+      [10] ifeq +503 (target=513)
+      [13] aload_0 v0
+      [14] getfield #88
+        + Fieldref [com/example/Cannon_Game/CannonView.x Landroid/graphics/Point;]
+      [17] dup
+      [18] getfield #47
+        + Fieldref [android/graphics/Point.x I]
+      [21] i2d
+      [22] dload_3 v3
+      [23] aload_0 v0
+      [24] getfield #89
+        + Fieldref [com/example/Cannon_Game/CannonView.y I]
+      [27] i2d
+      [28] dmul
+      [29] dadd
+      [30] d2i
+      [31] putfield #47
+        + Fieldref [android/graphics/Point.x I]
+      [34] aload_0 v0
+      [35] getfield #88
+        + Fieldref [com/example/Cannon_Game/CannonView.x Landroid/graphics/Point;]
+      [38] dup
+      [39] getfield #48
+        + Fieldref [android/graphics/Point.y I]
+      [42] i2d
+      [43] dload_3 v3
+      [44] aload_0 v0
+      [45] getfield #90
+        + Fieldref [com/example/Cannon_Game/CannonView.z I]
+      [48] i2d
+      [49] dmul
+      [50] dadd
+      [51] d2i
+      [52] putfield #48
+        + Fieldref [android/graphics/Point.y I]
+      [55] aload_0 v0
+      [56] getfield #88
+        + Fieldref [com/example/Cannon_Game/CannonView.x Landroid/graphics/Point;]
+      [59] getfield #47
+        + Fieldref [android/graphics/Point.x I]
+      [62] aload_0 v0
+      [63] getfield #50
+        + Fieldref [com/example/Cannon_Game/CannonView.B I]
+      [66] iadd
+      [67] aload_0 v0
+      [68] getfield #73
+        + Fieldref [com/example/Cannon_Game/CannonView.i I]
+      [71] ificmple +129 (target=200)
+      [74] aload_0 v0
+      [75] getfield #88
+        + Fieldref [com/example/Cannon_Game/CannonView.x Landroid/graphics/Point;]
+      [78] getfield #47
+        + Fieldref [android/graphics/Point.x I]
+      [81] aload_0 v0
+      [82] getfield #50
+        + Fieldref [com/example/Cannon_Game/CannonView.B I]
+      [85] isub
+      [86] aload_0 v0
+      [87] getfield #73
+        + Fieldref [com/example/Cannon_Game/CannonView.i I]
+      [90] ificmpge +110 (target=200)
+      [93] aload_0 v0
+      [94] getfield #88
+        + Fieldref [com/example/Cannon_Game/CannonView.x Landroid/graphics/Point;]
+      [97] getfield #48
+        + Fieldref [android/graphics/Point.y I]
+      [100] aload_0 v0
+      [101] getfield #50
+        + Fieldref [com/example/Cannon_Game/CannonView.B I]
+      [104] iadd
+      [105] aload_0 v0
+      [106] getfield #72
+        + Fieldref [com/example/Cannon_Game/CannonView.h Lcom/example/Cannon_Game/e;]
+      [109] getfield #91
+        + Fieldref [com/example/Cannon_Game/e.a Landroid/graphics/Point;]
+      [112] getfield #48
+        + Fieldref [android/graphics/Point.y I]
+      [115] ificmple +85 (target=200)
+      [118] aload_0 v0
+      [119] getfield #88
+        + Fieldref [com/example/Cannon_Game/CannonView.x Landroid/graphics/Point;]
+      [122] getfield #48
+        + Fieldref [android/graphics/Point.y I]
+      [125] aload_0 v0
+      [126] getfield #50
+        + Fieldref [com/example/Cannon_Game/CannonView.B I]
+      [129] isub
+      [130] aload_0 v0
+      [131] getfield #72
+        + Fieldref [com/example/Cannon_Game/CannonView.h Lcom/example/Cannon_Game/e;]
+      [134] getfield #92
+        + Fieldref [com/example/Cannon_Game/e.b Landroid/graphics/Point;]
+      [137] getfield #48
+        + Fieldref [android/graphics/Point.y I]
+      [140] ificmpge +60 (target=200)
+      [143] aload_0 v0
+      [144] dup
+      [145] getfield #89
+        + Fieldref [com/example/Cannon_Game/CannonView.y I]
+      [148] iconst_m1
+      [149] imul
+      [150] putfield #89
+        + Fieldref [com/example/Cannon_Game/CannonView.y I]
+      [153] aload_0 v0
+      [154] dup
+      [155] getfield #69
+        + Fieldref [com/example/Cannon_Game/CannonView.e D]
+      [158] ldc2_w #37
+        + Double [2.0]
+      [161] dsub
+      [162] putfield #69
+        + Fieldref [com/example/Cannon_Game/CannonView.e D]
+      [165] aload_0 v0
+      [166] getfield #57
+        + Fieldref [com/example/Cannon_Game/CannonView.I Landroid/media/SoundPool;]
+      [169] aload_0 v0
+      [170] getfield #58
+        + Fieldref [com/example/Cannon_Game/CannonView.J Ljava/util/Map;]
+      [173] iconst_2
+      [174] invokestatic #139
+        + Methodref [java/lang/Integer.valueOf (I)Ljava/lang/Integer;]
+      [177] invokeinterface #145
+        + InterfaceMethodref [java/util/Map.get (Ljava/lang/Object;)Ljava/lang/Object;]
+      [182] checkcast #31
+        + Class [java/lang/Integer]
+      [185] invokevirtual #138
+        + Methodref [java/lang/Integer.intValue ()I]
+      [188] fconst_1
+      [189] fconst_1
+      [190] iconst_1
+      [191] iconst_0
+      [192] fconst_1
+      [193] invokevirtual #117
+        + Methodref [android/media/SoundPool.play (IFFIIF)I]
+      [196] pop
+      [197] goto +316 (target=513)
+      [200] aload_0 v0
+      [201] getfield #88
+        + Fieldref [com/example/Cannon_Game/CannonView.x Landroid/graphics/Point;]
+      [204] getfield #47
+        + Fieldref [android/graphics/Point.x I]
+      [207] aload_0 v0
+      [208] getfield #50
+        + Fieldref [com/example/Cannon_Game/CannonView.B I]
+      [211] iadd
+      [212] aload_0 v0
+      [213] getfield #55
+        + Fieldref [com/example/Cannon_Game/CannonView.G I]
+      [216] ificmpgt +18 (target=234)
+      [219] aload_0 v0
+      [220] getfield #88
+        + Fieldref [com/example/Cannon_Game/CannonView.x Landroid/graphics/Point;]
+      [223] getfield #47
+        + Fieldref [android/graphics/Point.x I]
+      [226] aload_0 v0
+      [227] getfield #50
+        + Fieldref [com/example/Cannon_Game/CannonView.B I]
+      [230] isub
+      [231] ifge +11 (target=242)
+      [234] aload_0 v0
+      [235] iconst_0
+      [236] putfield #49
+        + Fieldref [com/example/Cannon_Game/CannonView.A Z]
+      [239] goto +274 (target=513)
+      [242] aload_0 v0
+      [243] getfield #88
+        + Fieldref [com/example/Cannon_Game/CannonView.x Landroid/graphics/Point;]
+      [246] getfield #48
+        + Fieldref [android/graphics/Point.y I]
+      [249] aload_0 v0
+      [250] getfield #50
+        + Fieldref [com/example/Cannon_Game/CannonView.B I]
+      [253] iadd
+      [254] aload_0 v0
+      [255] getfield #56
+        + Fieldref [com/example/Cannon_Game/CannonView.H I]
+      [258] ificmpgt +18 (target=276)
+      [261] aload_0 v0
+      [262] getfield #88
+        + Fieldref [com/example/Cannon_Game/CannonView.x Landroid/graphics/Point;]
+      [265] getfield #48
+        + Fieldref [android/graphics/Point.y I]
+      [268] aload_0 v0
+      [269] getfield #50
+        + Fieldref [com/example/Cannon_Game/CannonView.B I]
+      [272] isub
+      [273] ifge +11 (target=284)
+      [276] aload_0 v0
+      [277] iconst_0
+      [278] putfield #49
+        + Fieldref [com/example/Cannon_Game/CannonView.A Z]
+      [281] goto +232 (target=513)
+      [284] aload_0 v0
+      [285] getfield #88
+        + Fieldref [com/example/Cannon_Game/CannonView.x Landroid/graphics/Point;]
+      [288] getfield #47
+        + Fieldref [android/graphics/Point.x I]
+      [291] aload_0 v0
+      [292] getfield #50
+        + Fieldref [com/example/Cannon_Game/CannonView.B I]
+      [295] iadd
+      [296] aload_0 v0
+      [297] getfield #79
+        + Fieldref [com/example/Cannon_Game/CannonView.o I]
+      [300] ificmple +213 (target=513)
+      [303] aload_0 v0
+      [304] getfield #88
+        + Fieldref [com/example/Cannon_Game/CannonView.x Landroid/graphics/Point;]
+      [307] getfield #47
+        + Fieldref [android/graphics/Point.x I]
+      [310] aload_0 v0
+      [311] getfield #50
+        + Fieldref [com/example/Cannon_Game/CannonView.B I]
+      [314] isub
+      [315] aload_0 v0
+      [316] getfield #79
+        + Fieldref [com/example/Cannon_Game/CannonView.o I]
+      [319] ificmpge +194 (target=513)
+      [322] aload_0 v0
+      [323] getfield #88
+        + Fieldref [com/example/Cannon_Game/CannonView.x Landroid/graphics/Point;]
+      [326] getfield #48
+        + Fieldref [android/graphics/Point.y I]
+      [329] aload_0 v0
+      [330] getfield #50
+        + Fieldref [com/example/Cannon_Game/CannonView.B I]
+      [333] iadd
+      [334] aload_0 v0
+      [335] getfield #78
+        + Fieldref [com/example/Cannon_Game/CannonView.n Lcom/example/Cannon_Game/e;]
+      [338] getfield #91
+        + Fieldref [com/example/Cannon_Game/e.a Landroid/graphics/Point;]
+      [341] getfield #48
+        + Fieldref [android/graphics/Point.y I]
+      [344] ificmple +169 (target=513)
+      [347] aload_0 v0
+      [348] getfield #88
+        + Fieldref [com/example/Cannon_Game/CannonView.x Landroid/graphics/Point;]
+      [351] getfield #48
+        + Fieldref [android/graphics/Point.y I]
+      [354] aload_0 v0
+      [355] getfield #50
+        + Fieldref [com/example/Cannon_Game/CannonView.B I]
+      [358] isub
+      [359] aload_0 v0
+      [360] getfield #78
+        + Fieldref [com/example/Cannon_Game/CannonView.n Lcom/example/Cannon_Game/e;]
+      [363] getfield #92
+        + Fieldref [com/example/Cannon_Game/e.b Landroid/graphics/Point;]
+      [366] getfield #48
+        + Fieldref [android/graphics/Point.y I]
+      [369] ificmpge +144 (target=513)
+      [372] aload_0 v0
+      [373] getfield #88
+        + Fieldref [com/example/Cannon_Game/CannonView.x Landroid/graphics/Point;]
+      [376] getfield #48
+        + Fieldref [android/graphics/Point.y I]
+      [379] aload_0 v0
+      [380] getfield #78
+        + Fieldref [com/example/Cannon_Game/CannonView.n Lcom/example/Cannon_Game/e;]
+      [383] getfield #91
+        + Fieldref [com/example/Cannon_Game/e.a Landroid/graphics/Point;]
+      [386] getfield #48
+        + Fieldref [android/graphics/Point.y I]
+      [389] isub
+      [390] i2d
+      [391] aload_0 v0
+      [392] getfield #81
+        + Fieldref [com/example/Cannon_Game/CannonView.q D]
+      [395] ddiv
+      [396] d2i
+      [397] istore v5
+      [399] iload v5
+      [401] iflt +112 (target=513)
+      [404] iload v5
+      [406] bipush 7
+      [408] ificmpge +105 (target=513)
+      [411] aload_0 v0
+      [412] getfield #86
+        + Fieldref [com/example/Cannon_Game/CannonView.v [Z]
+      [415] iload v5
+      [417] baload
+      [418] ifne +95 (target=513)
+      [421] aload_0 v0
+      [422] getfield #86
+        + Fieldref [com/example/Cannon_Game/CannonView.v [Z]
+      [425] iload v5
+      [427] iconst_1
+      [428] bastore
+      [429] aload_0 v0
+      [430] iconst_0
+      [431] putfield #49
+        + Fieldref [com/example/Cannon_Game/CannonView.A Z]
+      [434] aload_0 v0
+      [435] dup
+      [436] getfield #69
+        + Fieldref [com/example/Cannon_Game/CannonView.e D]
+      [439] ldc2_w #39
+        + Double [3.0]
+      [442] dadd
+      [443] putfield #69
+        + Fieldref [com/example/Cannon_Game/CannonView.e D]
+      [446] aload_0 v0
+      [447] getfield #57
+        + Fieldref [com/example/Cannon_Game/CannonView.I Landroid/media/SoundPool;]
+      [450] aload_0 v0
+      [451] getfield #58
+        + Fieldref [com/example/Cannon_Game/CannonView.J Ljava/util/Map;]
+      [454] iconst_0
+      [455] invokestatic #139
+        + Methodref [java/lang/Integer.valueOf (I)Ljava/lang/Integer;]
+      [458] invokeinterface #145
+        + InterfaceMethodref [java/util/Map.get (Ljava/lang/Object;)Ljava/lang/Object;]
+      [463] checkcast #31
+        + Class [java/lang/Integer]
+      [466] invokevirtual #138
+        + Methodref [java/lang/Integer.intValue ()I]
+      [469] fconst_1
+      [470] fconst_1
+      [471] iconst_1
+      [472] iconst_0
+      [473] fconst_1
+      [474] invokevirtual #117
+        + Methodref [android/media/SoundPool.play (IFFIIF)I]
+      [477] pop
+      [478] aload_0 v0
+      [479] dup
+      [480] getfield #87
+        + Fieldref [com/example/Cannon_Game/CannonView.w I]
+      [483] iconst_1
+      [484] iadd
+      [485] dup_x1
+      [486] putfield #87
+        + Fieldref [com/example/Cannon_Game/CannonView.w I]
+      [489] bipush 7
+      [491] ificmpne +22 (target=513)
+      [494] aload_0 v0
+      [495] getfield #65
+        + Fieldref [com/example/Cannon_Game/CannonView.a Lcom/example/Cannon_Game/d;]
+      [498] iconst_0
+      [499] invokevirtual #133
+        + Methodref [com/example/Cannon_Game/d.a (Z)V]
+      [502] aload_0 v0
+      [503] ldc #7
+        + Integer [2131034115]
+      [505] invokespecial #125
+        + Methodref [com/example/Cannon_Game/CannonView.a (I)V]
+      [508] aload_0 v0
+      [509] iconst_1
+      [510] putfield #68
+        + Fieldref [com/example/Cannon_Game/CannonView.d Z]
+      [513] dload_3 v3
+      [514] aload_0 v0
+      [515] getfield #77
+        + Fieldref [com/example/Cannon_Game/CannonView.m F]
+      [518] f2d
+      [519] dmul
+      [520] dstore v5
+      [522] aload_0 v0
+      [523] getfield #72
+        + Fieldref [com/example/Cannon_Game/CannonView.h Lcom/example/Cannon_Game/e;]
+      [526] getfield #91
+        + Fieldref [com/example/Cannon_Game/e.a Landroid/graphics/Point;]
+      [529] dup
+      [530] getfield #48
+        + Fieldref [android/graphics/Point.y I]
+      [533] i2d
+      [534] dload v5
+      [536] dadd
+      [537] d2i
+      [538] putfield #48
+        + Fieldref [android/graphics/Point.y I]
+      [541] aload_0 v0
+      [542] getfield #72
+        + Fieldref [com/example/Cannon_Game/CannonView.h Lcom/example/Cannon_Game/e;]
+      [545] getfield #92
+        + Fieldref [com/example/Cannon_Game/e.b Landroid/graphics/Point;]
+      [548] dup
+      [549] getfield #48
+        + Fieldref [android/graphics/Point.y I]
+      [552] i2d
+      [553] dload v5
+      [555] dadd
+      [556] d2i
+      [557] putfield #48
+        + Fieldref [android/graphics/Point.y I]
+      [560] dload_3 v3
+      [561] aload_0 v0
+      [562] getfield #84
+        + Fieldref [com/example/Cannon_Game/CannonView.t F]
+      [565] f2d
+      [566] dmul
+      [567] dstore v7
+      [569] aload_0 v0
+      [570] getfield #78
+        + Fieldref [com/example/Cannon_Game/CannonView.n Lcom/example/Cannon_Game/e;]
+      [573] getfield #91
+        + Fieldref [com/example/Cannon_Game/e.a Landroid/graphics/Point;]
+      [576] dup
+      [577] getfield #48
+        + Fieldref [android/graphics/Point.y I]
+      [580] i2d
+      [581] dload v7
+      [583] dadd
+      [584] d2i
+      [585] putfield #48
+        + Fieldref [android/graphics/Point.y I]
+      [588] aload_0 v0
+      [589] getfield #78
+        + Fieldref [com/example/Cannon_Game/CannonView.n Lcom/example/Cannon_Game/e;]
+      [592] getfield #92
+        + Fieldref [com/example/Cannon_Game/e.b Landroid/graphics/Point;]
+      [595] dup
+      [596] getfield #48
+        + Fieldref [android/graphics/Point.y I]
+      [599] i2d
+      [600] dload v7
+      [602] dadd
+      [603] d2i
+      [604] putfield #48
+        + Fieldref [android/graphics/Point.y I]
+      [607] aload_0 v0
+      [608] getfield #72
+        + Fieldref [com/example/Cannon_Game/CannonView.h Lcom/example/Cannon_Game/e;]
+      [611] getfield #91
+        + Fieldref [com/example/Cannon_Game/e.a Landroid/graphics/Point;]
+      [614] getfield #48
+        + Fieldref [android/graphics/Point.y I]
+      [617] iflt +20 (target=637)
+      [620] aload_0 v0
+      [621] getfield #72
+        + Fieldref [com/example/Cannon_Game/CannonView.h Lcom/example/Cannon_Game/e;]
+      [624] getfield #92
+        + Fieldref [com/example/Cannon_Game/e.b Landroid/graphics/Point;]
+      [627] getfield #48
+        + Fieldref [android/graphics/Point.y I]
+      [630] aload_0 v0
+      [631] getfield #56
+        + Fieldref [com/example/Cannon_Game/CannonView.H I]
+      [634] ificmple +14 (target=648)
+      [637] aload_0 v0
+      [638] dup
+      [639] getfield #77
+        + Fieldref [com/example/Cannon_Game/CannonView.m F]
+      [642] ldc #10
+        + Float [-1.0]
+      [644] fmul
+      [645] putfield #77
+        + Fieldref [com/example/Cannon_Game/CannonView.m F]
+      [648] aload_0 v0
+      [649] getfield #78
+        + Fieldref [com/example/Cannon_Game/CannonView.n Lcom/example/Cannon_Game/e;]
+      [652] getfield #91
+        + Fieldref [com/example/Cannon_Game/e.a Landroid/graphics/Point;]
+      [655] getfield #48
+        + Fieldref [android/graphics/Point.y I]
+      [658] iflt +20 (target=678)
+      [661] aload_0 v0
+      [662] getfield #78
+        + Fieldref [com/example/Cannon_Game/CannonView.n Lcom/example/Cannon_Game/e;]
+      [665] getfield #92
+        + Fieldref [com/example/Cannon_Game/e.b Landroid/graphics/Point;]
+      [668] getfield #48
+        + Fieldref [android/graphics/Point.y I]
+      [671] aload_0 v0
+      [672] getfield #56
+        + Fieldref [com/example/Cannon_Game/CannonView.H I]
+      [675] ificmple +14 (target=689)
+      [678] aload_0 v0
+      [679] dup
+      [680] getfield #84
+        + Fieldref [com/example/Cannon_Game/CannonView.t F]
+      [683] ldc #10
+        + Float [-1.0]
+      [685] fmul
+      [686] putfield #84
+        + Fieldref [com/example/Cannon_Game/CannonView.t F]
+      [689] aload_0 v0
+      [690] dup
+      [691] getfield #69
+        + Fieldref [com/example/Cannon_Game/CannonView.e D]
+      [694] dload_3 v3
+      [695] dsub
+      [696] putfield #69
+        + Fieldref [com/example/Cannon_Game/CannonView.e D]
+      [699] aload_0 v0
+      [700] getfield #69
+        + Fieldref [com/example/Cannon_Game/CannonView.e D]
+      [703] dconst_0
+      [704] dcmpg
+      [705] ifgt +27 (target=732)
+      [708] aload_0 v0
+      [709] dconst_0
+      [710] putfield #69
+        + Fieldref [com/example/Cannon_Game/CannonView.e D]
+      [713] aload_0 v0
+      [714] iconst_1
+      [715] putfield #68
+        + Fieldref [com/example/Cannon_Game/CannonView.d Z]
+      [718] aload_0 v0
+      [719] getfield #65
+        + Fieldref [com/example/Cannon_Game/CannonView.a Lcom/example/Cannon_Game/d;]
+      [722] iconst_0
+      [723] invokevirtual #133
+        + Methodref [com/example/Cannon_Game/d.a (Z)V]
+      [726] aload_0 v0
+      [727] ldc #8
+        + Integer [2131034116]
+      [729] invokespecial #125
+        + Methodref [com/example/Cannon_Game/CannonView.a (I)V]
+      [732] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 11):
+        - [200] Var: ...[d], Stack: (empty)
+        - [234] Var: ..., Stack: (empty)
+        - [242] Var: ..., Stack: (empty)
+        - [276] Var: ..., Stack: (empty)
+        - [284] Var: ..., Stack: (empty)
+        - [513] Var: ..., Stack: (empty)
+        - [637] Var: ...[d][d], Stack: (empty)
+        - [648] Var: ..., Stack: (empty)
+        - [678] Var: ..., Stack: (empty)
+        - [689] Var: ..., Stack: (empty)
+        - [732] Var: ..., Stack: (empty)
+  + Method:       a(Landroid/view/MotionEvent;)V
+    Access flags: 0x1
+      = public void a(android.view.MotionEvent)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 117, locals = 4, stack = 7):
+      [0] aload_0 v0
+      [1] getfield #49
+        + Fieldref [com/example/Cannon_Game/CannonView.A Z]
+      [4] ifeq +4 (target=8)
+      [7] return
+      [8] aload_0 v0
+      [9] aload_1 v1
+      [10] invokevirtual #126
+        + Methodref [com/example/Cannon_Game/CannonView.b (Landroid/view/MotionEvent;)D]
+      [13] dstore_2 v2
+      [14] aload_0 v0
+      [15] getfield #88
+        + Fieldref [com/example/Cannon_Game/CannonView.x Landroid/graphics/Point;]
+      [18] aload_0 v0
+      [19] getfield #50
+        + Fieldref [com/example/Cannon_Game/CannonView.B I]
+      [22] putfield #47
+        + Fieldref [android/graphics/Point.x I]
+      [25] aload_0 v0
+      [26] getfield #88
+        + Fieldref [com/example/Cannon_Game/CannonView.x Landroid/graphics/Point;]
+      [29] aload_0 v0
+      [30] getfield #56
+        + Fieldref [com/example/Cannon_Game/CannonView.H I]
+      [33] iconst_2
+      [34] idiv
+      [35] putfield #48
+        + Fieldref [android/graphics/Point.y I]
+      [38] aload_0 v0
+      [39] aload_0 v0
+      [40] getfield #51
+        + Fieldref [com/example/Cannon_Game/CannonView.C I]
+      [43] i2d
+      [44] dload_2 v2
+      [45] invokestatic #142
+        + Methodref [java/lang/Math.sin (D)D]
+      [48] dmul
+      [49] d2i
+      [50] putfield #89
+        + Fieldref [com/example/Cannon_Game/CannonView.y I]
+      [53] aload_0 v0
+      [54] aload_0 v0
+      [55] getfield #51
+        + Fieldref [com/example/Cannon_Game/CannonView.C I]
+      [58] ineg
+      [59] i2d
+      [60] dload_2 v2
+      [61] invokestatic #141
+        + Methodref [java/lang/Math.cos (D)D]
+      [64] dmul
+      [65] d2i
+      [66] putfield #90
+        + Fieldref [com/example/Cannon_Game/CannonView.z I]
+      [69] aload_0 v0
+      [70] iconst_1
+      [71] putfield #49
+        + Fieldref [com/example/Cannon_Game/CannonView.A Z]
+      [74] aload_0 v0
+      [75] dup
+      [76] getfield #70
+        + Fieldref [com/example/Cannon_Game/CannonView.f I]
+      [79] iconst_1
+      [80] iadd
+      [81] putfield #70
+        + Fieldref [com/example/Cannon_Game/CannonView.f I]
+      [84] aload_0 v0
+      [85] getfield #57
+        + Fieldref [com/example/Cannon_Game/CannonView.I Landroid/media/SoundPool;]
+      [88] aload_0 v0
+      [89] getfield #58
+        + Fieldref [com/example/Cannon_Game/CannonView.J Ljava/util/Map;]
+      [92] iconst_1
+      [93] invokestatic #139
+        + Methodref [java/lang/Integer.valueOf (I)Ljava/lang/Integer;]
+      [96] invokeinterface #145
+        + InterfaceMethodref [java/util/Map.get (Ljava/lang/Object;)Ljava/lang/Object;]
+      [101] checkcast #31
+        + Class [java/lang/Integer]
+      [104] invokevirtual #138
+        + Methodref [java/lang/Integer.intValue ()I]
+      [107] fconst_1
+      [108] fconst_1
+      [109] iconst_1
+      [110] iconst_0
+      [111] fconst_1
+      [112] invokevirtual #117
+        + Methodref [android/media/SoundPool.play (IFFIIF)I]
+      [115] pop
+      [116] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 1):
+        - [8] Var: ..., Stack: (empty)
+  + Method:       b(Landroid/view/MotionEvent;)D
+    Access flags: 0x1
+      = public double b(android.view.MotionEvent)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 123, locals = 7, stack = 5):
+      [0] new #19
+        + Class [android/graphics/Point]
+      [3] dup
+      [4] aload_1 v1
+      [5] invokevirtual #119
+        + Methodref [android/view/MotionEvent.getX ()F]
+      [8] f2i
+      [9] aload_1 v1
+      [10] invokevirtual #120
+        + Methodref [android/view/MotionEvent.getY ()F]
+      [13] f2i
+      [14] invokespecial #113
+        + Methodref [android/graphics/Point.<init> (II)V]
+      [17] astore_2 v2
+      [18] aload_0 v0
+      [19] getfield #56
+        + Fieldref [com/example/Cannon_Game/CannonView.H I]
+      [22] iconst_2
+      [23] idiv
+      [24] aload_2 v2
+      [25] getfield #48
+        + Fieldref [android/graphics/Point.y I]
+      [28] isub
+      [29] i2d
+      [30] dstore_3 v3
+      [31] dconst_0
+      [32] dstore v5
+      [34] dload_3 v3
+      [35] dconst_0
+      [36] dcmpl
+      [37] ifeq +15 (target=52)
+      [40] aload_2 v2
+      [41] getfield #47
+        + Fieldref [android/graphics/Point.x I]
+      [44] i2d
+      [45] dload_3 v3
+      [46] ddiv
+      [47] invokestatic #140
+        + Methodref [java/lang/Math.atan (D)D]
+      [50] dstore v5
+      [52] aload_2 v2
+      [53] getfield #48
+        + Fieldref [android/graphics/Point.y I]
+      [56] aload_0 v0
+      [57] getfield #56
+        + Fieldref [com/example/Cannon_Game/CannonView.H I]
+      [60] iconst_2
+      [61] idiv
+      [62] ificmple +11 (target=73)
+      [65] dload v5
+      [67] ldc2_w #41
+        + Double [3.141592653589793]
+      [70] dadd
+      [71] dstore v5
+      [73] aload_0 v0
+      [74] getfield #54
+        + Fieldref [com/example/Cannon_Game/CannonView.F Landroid/graphics/Point;]
+      [77] aload_0 v0
+      [78] getfield #53
+        + Fieldref [com/example/Cannon_Game/CannonView.E I]
+      [81] i2d
+      [82] dload v5
+      [84] invokestatic #142
+        + Methodref [java/lang/Math.sin (D)D]
+      [87] dmul
+      [88] d2i
+      [89] putfield #47
+        + Fieldref [android/graphics/Point.x I]
+      [92] aload_0 v0
+      [93] getfield #54
+        + Fieldref [com/example/Cannon_Game/CannonView.F Landroid/graphics/Point;]
+      [96] aload_0 v0
+      [97] getfield #53
+        + Fieldref [com/example/Cannon_Game/CannonView.E I]
+      [100] ineg
+      [101] i2d
+      [102] dload v5
+      [104] invokestatic #141
+        + Methodref [java/lang/Math.cos (D)D]
+      [107] dmul
+      [108] aload_0 v0
+      [109] getfield #56
+        + Fieldref [com/example/Cannon_Game/CannonView.H I]
+      [112] iconst_2
+      [113] idiv
+      [114] i2d
+      [115] dadd
+      [116] d2i
+      [117] putfield #48
+        + Fieldref [android/graphics/Point.y I]
+      [120] dload v5
+      [122] dreturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 2):
+        - [52] Var: ...[a:android/graphics/Point][d][d], Stack: (empty)
+        - [73] Var: ..., Stack: (empty)
+  + Method:       a(Landroid/graphics/Canvas;)V
+    Access flags: 0x1
+      = public void a(android.graphics.Canvas)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 342, locals = 4, stack = 8):
+      [0] aload_1 v1
+      [1] fconst_0
+      [2] fconst_0
+      [3] aload_1 v1
+      [4] invokevirtual #106
+        + Methodref [android/graphics/Canvas.getWidth ()I]
+      [7] i2f
+      [8] aload_1 v1
+      [9] invokevirtual #105
+        + Methodref [android/graphics/Canvas.getHeight ()I]
+      [12] i2f
+      [13] aload_0 v0
+      [14] getfield #64
+        + Fieldref [com/example/Cannon_Game/CannonView.P Landroid/graphics/Paint;]
+      [17] invokevirtual #103
+        + Methodref [android/graphics/Canvas.drawRect (FFFFLandroid/graphics/Paint;)V]
+      [20] aload_1 v1
+      [21] aload_0 v0
+      [22] invokevirtual #129
+        + Methodref [com/example/Cannon_Game/CannonView.getResources ()Landroid/content/res/Resources;]
+      [25] ldc #9
+        + Integer [2131034117]
+      [27] iconst_1
+      [28] anewarray #34
+        + Class [java/lang/Object]
+      [31] dup
+      [32] iconst_0
+      [33] aload_0 v0
+      [34] getfield #69
+        + Fieldref [com/example/Cannon_Game/CannonView.e D]
+      [37] invokestatic #137
+        + Methodref [java/lang/Double.valueOf (D)Ljava/lang/Double;]
+      [40] aastore
+      [41] invokevirtual #100
+        + Methodref [android/content/res/Resources.getString (I[Ljava/lang/Object;)Ljava/lang/String;]
+      [44] ldc #12
+        + Float [30.0]
+      [46] ldc #13
+        + Float [50.0]
+      [48] aload_0 v0
+      [49] getfield #59
+        + Fieldref [com/example/Cannon_Game/CannonView.K Landroid/graphics/Paint;]
+      [52] invokevirtual #104
+        + Methodref [android/graphics/Canvas.drawText (Ljava/lang/String;FFLandroid/graphics/Paint;)V]
+      [55] aload_0 v0
+      [56] getfield #49
+        + Fieldref [com/example/Cannon_Game/CannonView.A Z]
+      [59] ifeq +32 (target=91)
+      [62] aload_1 v1
+      [63] aload_0 v0
+      [64] getfield #88
+        + Fieldref [com/example/Cannon_Game/CannonView.x Landroid/graphics/Point;]
+      [67] getfield #47
+        + Fieldref [android/graphics/Point.x I]
+      [70] i2f
+      [71] aload_0 v0
+      [72] getfield #88
+        + Fieldref [com/example/Cannon_Game/CannonView.x Landroid/graphics/Point;]
+      [75] getfield #48
+        + Fieldref [android/graphics/Point.y I]
+      [78] i2f
+      [79] aload_0 v0
+      [80] getfield #50
+        + Fieldref [com/example/Cannon_Game/CannonView.B I]
+      [83] i2f
+      [84] aload_0 v0
+      [85] getfield #60
+        + Fieldref [com/example/Cannon_Game/CannonView.L Landroid/graphics/Paint;]
+      [88] invokevirtual #101
+        + Methodref [android/graphics/Canvas.drawCircle (FFFLandroid/graphics/Paint;)V]
+      [91] aload_1 v1
+      [92] fconst_0
+      [93] aload_0 v0
+      [94] getfield #56
+        + Fieldref [com/example/Cannon_Game/CannonView.H I]
+      [97] iconst_2
+      [98] idiv
+      [99] i2f
+      [100] aload_0 v0
+      [101] getfield #54
+        + Fieldref [com/example/Cannon_Game/CannonView.F Landroid/graphics/Point;]
+      [104] getfield #47
+        + Fieldref [android/graphics/Point.x I]
+      [107] i2f
+      [108] aload_0 v0
+      [109] getfield #54
+        + Fieldref [com/example/Cannon_Game/CannonView.F Landroid/graphics/Point;]
+      [112] getfield #48
+        + Fieldref [android/graphics/Point.y I]
+      [115] i2f
+      [116] aload_0 v0
+      [117] getfield #60
+        + Fieldref [com/example/Cannon_Game/CannonView.L Landroid/graphics/Paint;]
+      [120] invokevirtual #102
+        + Methodref [android/graphics/Canvas.drawLine (FFFFLandroid/graphics/Paint;)V]
+      [123] aload_1 v1
+      [124] fconst_0
+      [125] aload_0 v0
+      [126] getfield #56
+        + Fieldref [com/example/Cannon_Game/CannonView.H I]
+      [129] iconst_2
+      [130] idiv
+      [131] i2f
+      [132] aload_0 v0
+      [133] getfield #52
+        + Fieldref [com/example/Cannon_Game/CannonView.D I]
+      [136] i2f
+      [137] aload_0 v0
+      [138] getfield #61
+        + Fieldref [com/example/Cannon_Game/CannonView.M Landroid/graphics/Paint;]
+      [141] invokevirtual #101
+        + Methodref [android/graphics/Canvas.drawCircle (FFFLandroid/graphics/Paint;)V]
+      [144] aload_1 v1
+      [145] aload_0 v0
+      [146] getfield #72
+        + Fieldref [com/example/Cannon_Game/CannonView.h Lcom/example/Cannon_Game/e;]
+      [149] getfield #91
+        + Fieldref [com/example/Cannon_Game/e.a Landroid/graphics/Point;]
+      [152] getfield #47
+        + Fieldref [android/graphics/Point.x I]
+      [155] i2f
+      [156] aload_0 v0
+      [157] getfield #72
+        + Fieldref [com/example/Cannon_Game/CannonView.h Lcom/example/Cannon_Game/e;]
+      [160] getfield #91
+        + Fieldref [com/example/Cannon_Game/e.a Landroid/graphics/Point;]
+      [163] getfield #48
+        + Fieldref [android/graphics/Point.y I]
+      [166] i2f
+      [167] aload_0 v0
+      [168] getfield #72
+        + Fieldref [com/example/Cannon_Game/CannonView.h Lcom/example/Cannon_Game/e;]
+      [171] getfield #92
+        + Fieldref [com/example/Cannon_Game/e.b Landroid/graphics/Point;]
+      [174] getfield #47
+        + Fieldref [android/graphics/Point.x I]
+      [177] i2f
+      [178] aload_0 v0
+      [179] getfield #72
+        + Fieldref [com/example/Cannon_Game/CannonView.h Lcom/example/Cannon_Game/e;]
+      [182] getfield #92
+        + Fieldref [com/example/Cannon_Game/e.b Landroid/graphics/Point;]
+      [185] getfield #48
+        + Fieldref [android/graphics/Point.y I]
+      [188] i2f
+      [189] aload_0 v0
+      [190] getfield #62
+        + Fieldref [com/example/Cannon_Game/CannonView.N Landroid/graphics/Paint;]
+      [193] invokevirtual #102
+        + Methodref [android/graphics/Canvas.drawLine (FFFFLandroid/graphics/Paint;)V]
+      [196] new #19
+        + Class [android/graphics/Point]
+      [199] dup
+      [200] invokespecial #112
+        + Methodref [android/graphics/Point.<init> ()V]
+      [203] astore_2 v2
+      [204] aload_2 v2
+      [205] aload_0 v0
+      [206] getfield #78
+        + Fieldref [com/example/Cannon_Game/CannonView.n Lcom/example/Cannon_Game/e;]
+      [209] getfield #91
+        + Fieldref [com/example/Cannon_Game/e.a Landroid/graphics/Point;]
+      [212] getfield #47
+        + Fieldref [android/graphics/Point.x I]
+      [215] putfield #47
+        + Fieldref [android/graphics/Point.x I]
+      [218] aload_2 v2
+      [219] aload_0 v0
+      [220] getfield #78
+        + Fieldref [com/example/Cannon_Game/CannonView.n Lcom/example/Cannon_Game/e;]
+      [223] getfield #91
+        + Fieldref [com/example/Cannon_Game/e.a Landroid/graphics/Point;]
+      [226] getfield #48
+        + Fieldref [android/graphics/Point.y I]
+      [229] putfield #48
+        + Fieldref [android/graphics/Point.y I]
+      [232] iconst_1
+      [233] istore_3 v3
+      [234] iload_3 v3
+      [235] bipush 7
+      [237] ificmpgt +104 (target=341)
+      [240] aload_0 v0
+      [241] getfield #86
+        + Fieldref [com/example/Cannon_Game/CannonView.v [Z]
+      [244] iload_3 v3
+      [245] iconst_1
+      [246] isub
+      [247] baload
+      [248] ifne +72 (target=320)
+      [251] iload_3 v3
+      [252] iconst_2
+      [253] irem
+      [254] ifne +16 (target=270)
+      [257] aload_0 v0
+      [258] getfield #63
+        + Fieldref [com/example/Cannon_Game/CannonView.O Landroid/graphics/Paint;]
+      [261] sipush -256
+      [264] invokevirtual #109
+        + Methodref [android/graphics/Paint.setColor (I)V]
+      [267] goto +12 (target=279)
+      [270] aload_0 v0
+      [271] getfield #63
+        + Fieldref [com/example/Cannon_Game/CannonView.O Landroid/graphics/Paint;]
+      [274] ldc #1
+        + Integer [-16776961]
+      [276] invokevirtual #109
+        + Methodref [android/graphics/Paint.setColor (I)V]
+      [279] aload_1 v1
+      [280] aload_2 v2
+      [281] getfield #47
+        + Fieldref [android/graphics/Point.x I]
+      [284] i2f
+      [285] aload_2 v2
+      [286] getfield #48
+        + Fieldref [android/graphics/Point.y I]
+      [289] i2f
+      [290] aload_0 v0
+      [291] getfield #78
+        + Fieldref [com/example/Cannon_Game/CannonView.n Lcom/example/Cannon_Game/e;]
+      [294] getfield #92
+        + Fieldref [com/example/Cannon_Game/e.b Landroid/graphics/Point;]
+      [297] getfield #47
+        + Fieldref [android/graphics/Point.x I]
+      [300] i2f
+      [301] aload_2 v2
+      [302] getfield #48
+        + Fieldref [android/graphics/Point.y I]
+      [305] i2d
+      [306] aload_0 v0
+      [307] getfield #81
+        + Fieldref [com/example/Cannon_Game/CannonView.q D]
+      [310] dadd
+      [311] d2i
+      [312] i2f
+      [313] aload_0 v0
+      [314] getfield #63
+        + Fieldref [com/example/Cannon_Game/CannonView.O Landroid/graphics/Paint;]
+      [317] invokevirtual #102
+        + Methodref [android/graphics/Canvas.drawLine (FFFFLandroid/graphics/Paint;)V]
+      [320] aload_2 v2
+      [321] dup
+      [322] getfield #48
+        + Fieldref [android/graphics/Point.y I]
+      [325] i2d
+      [326] aload_0 v0
+      [327] getfield #81
+        + Fieldref [com/example/Cannon_Game/CannonView.q D]
+      [330] dadd
+      [331] d2i
+      [332] putfield #48
+        + Fieldref [android/graphics/Point.y I]
+      [335] iinc v3, 1
+      [338] goto -104 (target=234)
+      [341] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 6):
+        - [91] Var: ..., Stack: (empty)
+        - [234] Var: ...[a:android/graphics/Point][i], Stack: (empty)
+        - [270] Var: ..., Stack: (empty)
+        - [279] Var: ..., Stack: (empty)
+        - [320] Var: ..., Stack: (empty)
+        - [341] Var: -1, Stack: (empty)
+  + Method:       a(I)V
+    Access flags: 0x2
+      = private void a(int)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 101, locals = 3, stack = 8):
+      [0] new #15
+        + Class [android/app/AlertDialog$Builder]
+      [3] dup
+      [4] aload_0 v0
+      [5] invokevirtual #127
+        + Methodref [com/example/Cannon_Game/CannonView.getContext ()Landroid/content/Context;]
+      [8] invokespecial #94
+        + Methodref [android/app/AlertDialog$Builder.<init> (Landroid/content/Context;)V]
+      [11] astore_2 v2
+      [12] aload_2 v2
+      [13] aload_0 v0
+      [14] invokevirtual #129
+        + Methodref [com/example/Cannon_Game/CannonView.getResources ()Landroid/content/res/Resources;]
+      [17] iload_1 v1
+      [18] invokevirtual #99
+        + Methodref [android/content/res/Resources.getString (I)Ljava/lang/String;]
+      [21] invokevirtual #98
+        + Methodref [android/app/AlertDialog$Builder.setTitle (Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
+      [24] pop
+      [25] aload_2 v2
+      [26] iconst_0
+      [27] invokevirtual #95
+        + Methodref [android/app/AlertDialog$Builder.setCancelable (Z)Landroid/app/AlertDialog$Builder;]
+      [30] pop
+      [31] aload_2 v2
+      [32] aload_0 v0
+      [33] invokevirtual #129
+        + Methodref [com/example/Cannon_Game/CannonView.getResources ()Landroid/content/res/Resources;]
+      [36] ldc #5
+        + Integer [2131034113]
+      [38] iconst_2
+      [39] anewarray #34
+        + Class [java/lang/Object]
+      [42] dup
+      [43] iconst_0
+      [44] aload_0 v0
+      [45] getfield #70
+        + Fieldref [com/example/Cannon_Game/CannonView.f I]
+      [48] invokestatic #139
+        + Methodref [java/lang/Integer.valueOf (I)Ljava/lang/Integer;]
+      [51] aastore
+      [52] dup
+      [53] iconst_1
+      [54] aload_0 v0
+      [55] getfield #71
+        + Fieldref [com/example/Cannon_Game/CannonView.g D]
+      [58] invokestatic #137
+        + Methodref [java/lang/Double.valueOf (D)Ljava/lang/Double;]
+      [61] aastore
+      [62] invokevirtual #100
+        + Methodref [android/content/res/Resources.getString (I[Ljava/lang/Object;)Ljava/lang/String;]
+      [65] invokevirtual #96
+        + Methodref [android/app/AlertDialog$Builder.setMessage (Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
+      [68] pop
+      [69] aload_2 v2
+      [70] ldc #6
+        + Integer [2131034114]
+      [72] new #26
+        + Class [com/example/Cannon_Game/b]
+      [75] dup
+      [76] aload_0 v0
+      [77] invokespecial #130
+        + Methodref [com/example/Cannon_Game/b.<init> (Lcom/example/Cannon_Game/CannonView;)V]
+      [80] invokevirtual #97
+        + Methodref [android/app/AlertDialog$Builder.setPositiveButton (ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
+      [83] pop
+      [84] aload_0 v0
+      [85] getfield #66
+        + Fieldref [com/example/Cannon_Game/CannonView.b Landroid/app/Activity;]
+      [88] new #27
+        + Class [com/example/Cannon_Game/c]
+      [91] dup
+      [92] aload_0 v0
+      [93] aload_2 v2
+      [94] invokespecial #131
+        + Methodref [com/example/Cannon_Game/c.<init> (Lcom/example/Cannon_Game/CannonView;Landroid/app/AlertDialog$Builder;)V]
+      [97] invokevirtual #93
+        + Methodref [android/app/Activity.runOnUiThread (Ljava/lang/Runnable;)V]
+      [100] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       b()V
+    Access flags: 0x1
+      = public void b()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 16, locals = 1, stack = 2):
+      [0] aload_0 v0
+      [1] getfield #65
+        + Fieldref [com/example/Cannon_Game/CannonView.a Lcom/example/Cannon_Game/d;]
+      [4] ifnull +11 (target=15)
+      [7] aload_0 v0
+      [8] getfield #65
+        + Fieldref [com/example/Cannon_Game/CannonView.a Lcom/example/Cannon_Game/d;]
+      [11] iconst_0
+      [12] invokevirtual #133
+        + Methodref [com/example/Cannon_Game/d.a (Z)V]
+      [15] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 1):
+        - [15] Var: ..., Stack: (empty)
+  + Method:       c()V
+    Access flags: 0x1
+      = public void c()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 13, locals = 1, stack = 2):
+      [0] aload_0 v0
+      [1] getfield #57
+        + Fieldref [com/example/Cannon_Game/CannonView.I Landroid/media/SoundPool;]
+      [4] invokevirtual #118
+        + Methodref [android/media/SoundPool.release ()V]
+      [7] aload_0 v0
+      [8] aconst_null
+      [9] putfield #57
+        + Fieldref [com/example/Cannon_Game/CannonView.I Landroid/media/SoundPool;]
+      [12] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       surfaceChanged(Landroid/view/SurfaceHolder;III)V
+    Access flags: 0x1
+      = public void surfaceChanged(android.view.SurfaceHolder,int,int,int)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 1, locals = 5, stack = 0):
+      [0] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       surfaceCreated(Landroid/view/SurfaceHolder;)V
+    Access flags: 0x1
+      = public void surfaceCreated(android.view.SurfaceHolder)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 29, locals = 2, stack = 5):
+      [0] aload_0 v0
+      [1] new #28
+        + Class [com/example/Cannon_Game/d]
+      [4] dup
+      [5] aload_0 v0
+      [6] aload_1 v1
+      [7] invokespecial #132
+        + Methodref [com/example/Cannon_Game/d.<init> (Lcom/example/Cannon_Game/CannonView;Landroid/view/SurfaceHolder;)V]
+      [10] putfield #65
+        + Fieldref [com/example/Cannon_Game/CannonView.a Lcom/example/Cannon_Game/d;]
+      [13] aload_0 v0
+      [14] getfield #65
+        + Fieldref [com/example/Cannon_Game/CannonView.a Lcom/example/Cannon_Game/d;]
+      [17] iconst_1
+      [18] invokevirtual #133
+        + Methodref [com/example/Cannon_Game/d.a (Z)V]
+      [21] aload_0 v0
+      [22] getfield #65
+        + Fieldref [com/example/Cannon_Game/CannonView.a Lcom/example/Cannon_Game/d;]
+      [25] invokevirtual #135
+        + Methodref [com/example/Cannon_Game/d.start ()V]
+      [28] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       surfaceDestroyed(Landroid/view/SurfaceHolder;)V
+    Access flags: 0x1
+      = public void surfaceDestroyed(android.view.SurfaceHolder)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 31, locals = 4, stack = 2):
+      [0] iconst_1
+      [1] istore_2 v2
+      [2] aload_0 v0
+      [3] getfield #65
+        + Fieldref [com/example/Cannon_Game/CannonView.a Lcom/example/Cannon_Game/d;]
+      [6] iconst_0
+      [7] invokevirtual #133
+        + Methodref [com/example/Cannon_Game/d.a (Z)V]
+      [10] iload_2 v2
+      [11] ifeq +19 (target=30)
+      [14] aload_0 v0
+      [15] getfield #65
+        + Fieldref [com/example/Cannon_Game/CannonView.a Lcom/example/Cannon_Game/d;]
+      [18] invokevirtual #134
+        + Methodref [com/example/Cannon_Game/d.join ()V]
+      [21] iconst_0
+      [22] istore_2 v2
+      [23] goto -13 (target=10)
+      [26] astore_3 v3
+      [27] goto -17 (target=10)
+      [30] return
+      Code attribute exceptions (count = 1):
+      - ExceptionInfo (14 -> 23: 26):
+      + Class [java/lang/InterruptedException]
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 3):
+        - [10] Var: ...[i], Stack: (empty)
+        - [26] Var: ..., Stack: [a:java/lang/InterruptedException]
+        - [30] Var: ..., Stack: (empty)
+  + Method:       a(Lcom/example/Cannon_Game/CannonView;Z)Z
+    Access flags: 0x1008
+      = static synthetic boolean a(com.example.Cannon_Game.CannonView,boolean)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 7, locals = 2, stack = 3):
+      [0] aload_0 v0
+      [1] iload_1 v1
+      [2] dup_x1
+      [3] putfield #67
+        + Fieldref [com/example/Cannon_Game/CannonView.c Z]
+      [6] ireturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a(Lcom/example/Cannon_Game/CannonView;D)D
+    Access flags: 0x1008
+      = static synthetic double a(com.example.Cannon_Game.CannonView,double)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 12, locals = 3, stack = 5):
+      [0] aload_0 v0
+      [1] dup
+      [2] getfield #71
+        + Fieldref [com/example/Cannon_Game/CannonView.g D]
+      [5] dload_1 v1
+      [6] dadd
+      [7] dup2_x1
+      [8] putfield #71
+        + Fieldref [com/example/Cannon_Game/CannonView.g D]
+      [11] dreturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       b(Lcom/example/Cannon_Game/CannonView;D)V
+    Access flags: 0x1008
+      = static synthetic void b(com.example.Cannon_Game.CannonView,double)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 6, locals = 3, stack = 3):
+      [0] aload_0 v0
+      [1] dload_1 v1
+      [2] invokespecial #124
+        + Methodref [com/example/Cannon_Game/CannonView.a (D)V]
+      [5] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/example/Cannon_Game/b
+  Superclass:    java/lang/Object
+  Major version: 0x33
+  Minor version: 0x0
+  Access flags:  0x20
+    = class com.example.Cannon_Game.b extends java.lang.Object
+
+Interfaces (count = 1):
+  + Class [android/content/DialogInterface$OnClickListener]
+
+Constant Pool (count = 26):
+  + Class [android/content/DialogInterface$OnClickListener]
+  + Class [com/example/Cannon_Game/CannonView]
+  + Class [com/example/Cannon_Game/b]
+  + Class [java/lang/Object]
+  + Fieldref [com/example/Cannon_Game/b.a Lcom/example/Cannon_Game/CannonView;]
+  + Methodref [com/example/Cannon_Game/CannonView.a ()V]
+  + Methodref [com/example/Cannon_Game/CannonView.a (Lcom/example/Cannon_Game/CannonView;Z)Z]
+  + Methodref [java/lang/Object.<init> ()V]
+  + NameAndType [<init> ()V]
+  + NameAndType [a ()V]
+  + NameAndType [a (Lcom/example/Cannon_Game/CannonView;Z)Z]
+  + NameAndType [a Lcom/example/Cannon_Game/CannonView;]
+  + Utf8 [()V]
+  + Utf8 [(Landroid/content/DialogInterface;I)V]
+  + Utf8 [(Lcom/example/Cannon_Game/CannonView;)V]
+  + Utf8 [(Lcom/example/Cannon_Game/CannonView;Z)Z]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [Lcom/example/Cannon_Game/CannonView;]
+  + Utf8 [a]
+  + Utf8 [android/content/DialogInterface$OnClickListener]
+  + Utf8 [com/example/Cannon_Game/CannonView]
+  + Utf8 [com/example/Cannon_Game/b]
+  + Utf8 [java/lang/Object]
+  + Utf8 [onClick]
+
+Fields (count = 1):
+  + Field:        a Lcom/example/Cannon_Game/CannonView;
+    Access flags: 0x1010
+      = final synthetic com.example.Cannon_Game.CannonView a
+
+Methods (count = 2):
+  - Method:       <init>(Lcom/example/Cannon_Game/CannonView;)V
+    Access flags: 0x0
+      = b(com.example.Cannon_Game.CannonView)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 10, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] putfield #5
+        + Fieldref [com/example/Cannon_Game/b.a Lcom/example/Cannon_Game/CannonView;]
+      [5] aload_0 v0
+      [6] invokespecial #8
+        + Methodref [java/lang/Object.<init> ()V]
+      [9] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onClick(Landroid/content/DialogInterface;I)V
+    Access flags: 0x1
+      = public void onClick(android.content.DialogInterface,int)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 17, locals = 3, stack = 2):
+      [0] aload_0 v0
+      [1] getfield #5
+        + Fieldref [com/example/Cannon_Game/b.a Lcom/example/Cannon_Game/CannonView;]
+      [4] iconst_0
+      [5] invokestatic #7
+        + Methodref [com/example/Cannon_Game/CannonView.a (Lcom/example/Cannon_Game/CannonView;Z)Z]
+      [8] pop
+      [9] aload_0 v0
+      [10] getfield #5
+        + Fieldref [com/example/Cannon_Game/b.a Lcom/example/Cannon_Game/CannonView;]
+      [13] invokevirtual #6
+        + Methodref [com/example/Cannon_Game/CannonView.a ()V]
+      [16] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/example/Cannon_Game/c
+  Superclass:    java/lang/Object
+  Major version: 0x33
+  Minor version: 0x0
+  Access flags:  0x20
+    = class com.example.Cannon_Game.c extends java.lang.Object
+
+Interfaces (count = 1):
+  + Class [java/lang/Runnable]
+
+Constant Pool (count = 33):
+  + Class [android/app/AlertDialog$Builder]
+  + Class [com/example/Cannon_Game/CannonView]
+  + Class [com/example/Cannon_Game/c]
+  + Class [java/lang/Object]
+  + Class [java/lang/Runnable]
+  + Fieldref [com/example/Cannon_Game/c.a Landroid/app/AlertDialog$Builder;]
+  + Fieldref [com/example/Cannon_Game/c.b Lcom/example/Cannon_Game/CannonView;]
+  + Methodref [android/app/AlertDialog$Builder.show ()Landroid/app/AlertDialog;]
+  + Methodref [com/example/Cannon_Game/CannonView.a (Lcom/example/Cannon_Game/CannonView;Z)Z]
+  + Methodref [java/lang/Object.<init> ()V]
+  + NameAndType [<init> ()V]
+  + NameAndType [a (Lcom/example/Cannon_Game/CannonView;Z)Z]
+  + NameAndType [a Landroid/app/AlertDialog$Builder;]
+  + NameAndType [b Lcom/example/Cannon_Game/CannonView;]
+  + NameAndType [show ()Landroid/app/AlertDialog;]
+  + Utf8 [()Landroid/app/AlertDialog;]
+  + Utf8 [()V]
+  + Utf8 [(Lcom/example/Cannon_Game/CannonView;Landroid/app/AlertDialog$Builder;)V]
+  + Utf8 [(Lcom/example/Cannon_Game/CannonView;Z)Z]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [Landroid/app/AlertDialog$Builder;]
+  + Utf8 [Lcom/example/Cannon_Game/CannonView;]
+  + Utf8 [a]
+  + Utf8 [android/app/AlertDialog$Builder]
+  + Utf8 [b]
+  + Utf8 [com/example/Cannon_Game/CannonView]
+  + Utf8 [com/example/Cannon_Game/c]
+  + Utf8 [java/lang/Object]
+  + Utf8 [java/lang/Runnable]
+  + Utf8 [run]
+  + Utf8 [show]
+
+Fields (count = 2):
+  + Field:        a Landroid/app/AlertDialog$Builder;
+    Access flags: 0x1010
+      = final synthetic android.app.AlertDialog$Builder a
+  + Field:        b Lcom/example/Cannon_Game/CannonView;
+    Access flags: 0x1010
+      = final synthetic com.example.Cannon_Game.CannonView b
+
+Methods (count = 2):
+  - Method:       <init>(Lcom/example/Cannon_Game/CannonView;Landroid/app/AlertDialog$Builder;)V
+    Access flags: 0x0
+      = c(com.example.Cannon_Game.CannonView,android.app.AlertDialog$Builder)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 15, locals = 3, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] putfield #7
+        + Fieldref [com/example/Cannon_Game/c.b Lcom/example/Cannon_Game/CannonView;]
+      [5] aload_0 v0
+      [6] aload_2 v2
+      [7] putfield #6
+        + Fieldref [com/example/Cannon_Game/c.a Landroid/app/AlertDialog$Builder;]
+      [10] aload_0 v0
+      [11] invokespecial #10
+        + Methodref [java/lang/Object.<init> ()V]
+      [14] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       run()V
+    Access flags: 0x1
+      = public void run()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 18, locals = 1, stack = 2):
+      [0] aload_0 v0
+      [1] getfield #7
+        + Fieldref [com/example/Cannon_Game/c.b Lcom/example/Cannon_Game/CannonView;]
+      [4] iconst_1
+      [5] invokestatic #9
+        + Methodref [com/example/Cannon_Game/CannonView.a (Lcom/example/Cannon_Game/CannonView;Z)Z]
+      [8] pop
+      [9] aload_0 v0
+      [10] getfield #6
+        + Fieldref [com/example/Cannon_Game/c.a Landroid/app/AlertDialog$Builder;]
+      [13] invokevirtual #8
+        + Methodref [android/app/AlertDialog$Builder.show ()Landroid/app/AlertDialog;]
+      [16] pop
+      [17] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/example/Cannon_Game/d
+  Superclass:    java/lang/Thread
+  Major version: 0x33
+  Minor version: 0x0
+  Access flags:  0x20
+    = class com.example.Cannon_Game.d extends java.lang.Thread
+
+Interfaces (count = 0):
+
+Constant Pool (count = 66):
+  + String [CannonThread]
+  + Class [android/graphics/Canvas]
+  + Class [android/view/SurfaceHolder]
+  + Class [com/example/Cannon_Game/CannonView]
+  + Class [com/example/Cannon_Game/d]
+  + Class [java/lang/Object]
+  + Class [java/lang/System]
+  + Class [java/lang/Thread]
+  + Class [java/lang/Throwable]
+  + Double [1000.0]
+  + Fieldref [com/example/Cannon_Game/d.a Lcom/example/Cannon_Game/CannonView;]
+  + Fieldref [com/example/Cannon_Game/d.b Landroid/view/SurfaceHolder;]
+  + Fieldref [com/example/Cannon_Game/d.c Z]
+  + Methodref [com/example/Cannon_Game/CannonView.a (Landroid/graphics/Canvas;)V]
+  + Methodref [com/example/Cannon_Game/CannonView.a (Lcom/example/Cannon_Game/CannonView;D)D]
+  + Methodref [com/example/Cannon_Game/CannonView.b (Lcom/example/Cannon_Game/CannonView;D)V]
+  + Methodref [com/example/Cannon_Game/d.setName (Ljava/lang/String;)V]
+  + Methodref [java/lang/System.currentTimeMillis ()J]
+  + Methodref [java/lang/Thread.<init> ()V]
+  + InterfaceMethodref [android/view/SurfaceHolder.lockCanvas (Landroid/graphics/Rect;)Landroid/graphics/Canvas;]
+  + InterfaceMethodref [android/view/SurfaceHolder.unlockCanvasAndPost (Landroid/graphics/Canvas;)V]
+  + NameAndType [<init> ()V]
+  + NameAndType [a (Landroid/graphics/Canvas;)V]
+  + NameAndType [a (Lcom/example/Cannon_Game/CannonView;D)D]
+  + NameAndType [a Lcom/example/Cannon_Game/CannonView;]
+  + NameAndType [b (Lcom/example/Cannon_Game/CannonView;D)V]
+  + NameAndType [b Landroid/view/SurfaceHolder;]
+  + NameAndType [c Z]
+  + NameAndType [currentTimeMillis ()J]
+  + NameAndType [lockCanvas (Landroid/graphics/Rect;)Landroid/graphics/Canvas;]
+  + NameAndType [setName (Ljava/lang/String;)V]
+  + NameAndType [unlockCanvasAndPost (Landroid/graphics/Canvas;)V]
+  + Utf8 [()J]
+  + Utf8 [()V]
+  + Utf8 [(Landroid/graphics/Canvas;)V]
+  + Utf8 [(Landroid/graphics/Rect;)Landroid/graphics/Canvas;]
+  + Utf8 [(Lcom/example/Cannon_Game/CannonView;D)D]
+  + Utf8 [(Lcom/example/Cannon_Game/CannonView;D)V]
+  + Utf8 [(Lcom/example/Cannon_Game/CannonView;Landroid/view/SurfaceHolder;)V]
+  + Utf8 [(Ljava/lang/String;)V]
+  + Utf8 [(Z)V]
+  + Utf8 [<init>]
+  + Utf8 [CannonThread]
+  + Utf8 [Code]
+  + Utf8 [Landroid/view/SurfaceHolder;]
+  + Utf8 [Lcom/example/Cannon_Game/CannonView;]
+  + Utf8 [StackMapTable]
+  + Utf8 [Z]
+  + Utf8 [a]
+  + Utf8 [android/graphics/Canvas]
+  + Utf8 [android/view/SurfaceHolder]
+  + Utf8 [b]
+  + Utf8 [c]
+  + Utf8 [com/example/Cannon_Game/CannonView]
+  + Utf8 [com/example/Cannon_Game/d]
+  + Utf8 [currentTimeMillis]
+  + Utf8 [java/lang/Object]
+  + Utf8 [java/lang/System]
+  + Utf8 [java/lang/Thread]
+  + Utf8 [java/lang/Throwable]
+  + Utf8 [lockCanvas]
+  + Utf8 [run]
+  + Utf8 [setName]
+  + Utf8 [unlockCanvasAndPost]
+
+Fields (count = 3):
+  + Field:        b Landroid/view/SurfaceHolder;
+    Access flags: 0x2
+      = private android.view.SurfaceHolder b
+  + Field:        c Z
+    Access flags: 0x2
+      = private boolean c
+  + Field:        a Lcom/example/Cannon_Game/CannonView;
+    Access flags: 0x1010
+      = final synthetic com.example.Cannon_Game.CannonView a
+
+Methods (count = 3):
+  - Method:       <init>(Lcom/example/Cannon_Game/CannonView;Landroid/view/SurfaceHolder;)V
+    Access flags: 0x1
+      = public d(com.example.Cannon_Game.CannonView,android.view.SurfaceHolder)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 26, locals = 3, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] putfield #12
+        + Fieldref [com/example/Cannon_Game/d.a Lcom/example/Cannon_Game/CannonView;]
+      [5] aload_0 v0
+      [6] invokespecial #20
+        + Methodref [java/lang/Thread.<init> ()V]
+      [9] aload_0 v0
+      [10] iconst_1
+      [11] putfield #14
+        + Fieldref [com/example/Cannon_Game/d.c Z]
+      [14] aload_0 v0
+      [15] aload_2 v2
+      [16] putfield #13
+        + Fieldref [com/example/Cannon_Game/d.b Landroid/view/SurfaceHolder;]
+      [19] aload_0 v0
+      [20] ldc #1
+        + String [CannonThread]
+      [22] invokevirtual #18
+        + Methodref [com/example/Cannon_Game/d.setName (Ljava/lang/String;)V]
+      [25] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a(Z)V
+    Access flags: 0x1
+      = public void a(boolean)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 6, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] iload_1 v1
+      [2] putfield #14
+        + Fieldref [com/example/Cannon_Game/d.c Z]
+      [5] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       run()V
+    Access flags: 0x1
+      = public void run()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 132, locals = 11, stack = 5):
+      [0] aconst_null
+      [1] astore_1 v1
+      [2] invokestatic #19
+        + Methodref [java/lang/System.currentTimeMillis ()J]
+      [5] lstore_2 v2
+      [6] aload_0 v0
+      [7] getfield #14
+        + Fieldref [com/example/Cannon_Game/d.c Z]
+      [10] ifeq +121 (target=131)
+      [13] aload_0 v0
+      [14] getfield #13
+        + Fieldref [com/example/Cannon_Game/d.b Landroid/view/SurfaceHolder;]
+      [17] aconst_null
+      [18] invokeinterface #21
+        + InterfaceMethodref [android/view/SurfaceHolder.lockCanvas (Landroid/graphics/Rect;)Landroid/graphics/Canvas;]
+      [23] astore_1 v1
+      [24] aload_0 v0
+      [25] getfield #13
+        + Fieldref [com/example/Cannon_Game/d.b Landroid/view/SurfaceHolder;]
+      [28] dup
+      [29] astore v4
+      [31] monitorenter
+      [32] invokestatic #19
+        + Methodref [java/lang/System.currentTimeMillis ()J]
+      [35] lstore v5
+      [37] lload v5
+      [39] lload_2 v2
+      [40] lsub
+      [41] l2d
+      [42] dstore v7
+      [44] aload_0 v0
+      [45] getfield #12
+        + Fieldref [com/example/Cannon_Game/d.a Lcom/example/Cannon_Game/CannonView;]
+      [48] dload v7
+      [50] ldc2_w #10
+        + Double [1000.0]
+      [53] ddiv
+      [54] invokestatic #16
+        + Methodref [com/example/Cannon_Game/CannonView.a (Lcom/example/Cannon_Game/CannonView;D)D]
+      [57] pop2
+      [58] aload_0 v0
+      [59] getfield #12
+        + Fieldref [com/example/Cannon_Game/d.a Lcom/example/Cannon_Game/CannonView;]
+      [62] dload v7
+      [64] invokestatic #17
+        + Methodref [com/example/Cannon_Game/CannonView.b (Lcom/example/Cannon_Game/CannonView;D)V]
+      [67] aload_0 v0
+      [68] getfield #12
+        + Fieldref [com/example/Cannon_Game/d.a Lcom/example/Cannon_Game/CannonView;]
+      [71] aload_1 v1
+      [72] invokevirtual #15
+        + Methodref [com/example/Cannon_Game/CannonView.a (Landroid/graphics/Canvas;)V]
+      [75] lload v5
+      [77] lstore_2 v2
+      [78] aload v4
+      [80] monitorexit
+      [81] goto +11 (target=92)
+      [84] astore v9
+      [86] aload v4
+      [88] monitorexit
+      [89] aload v9
+      [91] athrow
+      [92] aload_1 v1
+      [93] ifnull +35 (target=128)
+      [96] aload_0 v0
+      [97] getfield #13
+        + Fieldref [com/example/Cannon_Game/d.b Landroid/view/SurfaceHolder;]
+      [100] aload_1 v1
+      [101] invokeinterface #22
+        + InterfaceMethodref [android/view/SurfaceHolder.unlockCanvasAndPost (Landroid/graphics/Canvas;)V]
+      [106] goto +22 (target=128)
+      [109] astore v10
+      [111] aload_1 v1
+      [112] ifnull +13 (target=125)
+      [115] aload_0 v0
+      [116] getfield #13
+        + Fieldref [com/example/Cannon_Game/d.b Landroid/view/SurfaceHolder;]
+      [119] aload_1 v1
+      [120] invokeinterface #22
+        + InterfaceMethodref [android/view/SurfaceHolder.unlockCanvasAndPost (Landroid/graphics/Canvas;)V]
+      [125] aload v10
+      [127] athrow
+      [128] goto -122 (target=6)
+      [131] return
+      Code attribute exceptions (count = 4):
+      - ExceptionInfo (32 -> 81: 84):
+      - ExceptionInfo (84 -> 89: 84):
+      - ExceptionInfo (13 -> 92: 109):
+      - ExceptionInfo (109 -> 111: 109):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 7):
+        - [6] Var: ...[a:android/graphics/Canvas][l], Stack: (empty)
+        - [84] Var: [a:com/example/Cannon_Game/d][a:android/graphics/Canvas][l][a:java/lang/Object], Stack: [a:java/lang/Throwable]
+        - [92] Var: -1, Stack: (empty)
+        - [109] Var: ..., Stack: [a:java/lang/Throwable]
+        - [125] Var: [a:com/example/Cannon_Game/d][a:android/graphics/Canvas][l][T][T][T][T][T][T][a:java/lang/Throwable], Stack: 
+        - [128] Var: [a:com/example/Cannon_Game/d][a:android/graphics/Canvas][l], Stack: 
+        - [131] Var: ..., Stack: (empty)
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/example/Cannon_Game/e
+  Superclass:    java/lang/Object
+  Major version: 0x33
+  Minor version: 0x0
+  Access flags:  0x21
+    = public class com.example.Cannon_Game.e extends java.lang.Object
+
+Interfaces (count = 0):
+
+Constant Pool (count = 22):
+  + Class [android/graphics/Point]
+  + Class [com/example/Cannon_Game/e]
+  + Class [java/lang/Object]
+  + Fieldref [com/example/Cannon_Game/e.a Landroid/graphics/Point;]
+  + Fieldref [com/example/Cannon_Game/e.b Landroid/graphics/Point;]
+  + Methodref [android/graphics/Point.<init> (II)V]
+  + Methodref [java/lang/Object.<init> ()V]
+  + NameAndType [<init> ()V]
+  + NameAndType [<init> (II)V]
+  + NameAndType [a Landroid/graphics/Point;]
+  + NameAndType [b Landroid/graphics/Point;]
+  + Utf8 [()V]
+  + Utf8 [(II)V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [Landroid/graphics/Point;]
+  + Utf8 [a]
+  + Utf8 [android/graphics/Point]
+  + Utf8 [b]
+  + Utf8 [com/example/Cannon_Game/e]
+  + Utf8 [java/lang/Object]
+
+Fields (count = 2):
+  + Field:        a Landroid/graphics/Point;
+    Access flags: 0x1
+      = public android.graphics.Point a
+  + Field:        b Landroid/graphics/Point;
+    Access flags: 0x1
+      = public android.graphics.Point b
+
+Methods (count = 1):
+  - Method:       <init>()V
+    Access flags: 0x1
+      = public e()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 31, locals = 1, stack = 5):
+      [0] aload_0 v0
+      [1] invokespecial #7
+        + Methodref [java/lang/Object.<init> ()V]
+      [4] aload_0 v0
+      [5] new #1
+        + Class [android/graphics/Point]
+      [8] dup
+      [9] iconst_0
+      [10] iconst_0
+      [11] invokespecial #6
+        + Methodref [android/graphics/Point.<init> (II)V]
+      [14] putfield #4
+        + Fieldref [com/example/Cannon_Game/e.a Landroid/graphics/Point;]
+      [17] aload_0 v0
+      [18] new #1
+        + Class [android/graphics/Point]
+      [21] dup
+      [22] iconst_0
+      [23] iconst_0
+      [24] invokespecial #6
+        + Methodref [android/graphics/Point.<init> (II)V]
+      [27] putfield #5
+        + Fieldref [com/example/Cannon_Game/e.b Landroid/graphics/Point;]
+      [30] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
